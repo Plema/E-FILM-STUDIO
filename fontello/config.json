@@ -7,9 +7,23 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "1c27cecac522e7b4915f93def9f153f0",
-      "css": "cities",
+      "uid": "f8d2e71c53bcbdef89742a35b3cfc27b",
+      "css": "star",
       "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M500 0L612.3 368.5H975.5L681.6 596.3 793.9 964.8 500 737 206.1 964.8 318.4 596.3 24.5 368.5H387.7L500 0Z",
+        "width": 1000
+      },
+      "search": [
+        "star-9"
+      ]
+    },
+    {
+      "uid": "f21c4060b6772f8da77dbe947fe075d7",
+      "css": "cities",
+      "code": 59393,
       "src": "custom_icons",
       "selected": true,
       "svg": {
