@@ -1,12 +1,5 @@
 $(function(){
-
-    if($(window).width() >= 768){
-        $('.our-services-item h3').matchHeight({
-            byRow: false
-        });    
-    }
-
-    $('.our-services .filter li').on('click', function(){
+    $('.services .filter li').on('click', function(){
         $('.filter li').removeClass('active');
         $(this).addClass('active');
     });
@@ -18,6 +11,7 @@ $(function(){
 
     jcf.replaceAll();
 
+    //Customer slider
     var customersSlider = $('.customers-slider');
 
     customersSlider.on("init", function(event, slick){
@@ -35,8 +29,7 @@ $(function(){
         prevArrow: '<button class="slick-arrow prev"><img src="../img/arrow-slider.svg"></button>',
     });
 
-    $("#my-accordion").accordionjs();
-
+    // Portfolio slider
     var portfolioSlider = $('.portfolio-slider');
 
     portfolioSlider.on("init", function(event, slick){
@@ -79,5 +72,6 @@ $(function(){
             reviewsSlider.unslick();
         }
     });
-    
+
+    $("#my-accordion").accordionjs();
 });
