@@ -73,5 +73,23 @@ $(function(){
         }
     });
 
+    //Stages sloder
+
+    let stagesSlider = $('.stages-slider');
+
+    $(window).on('load resize', function(){
+        if($(window).width() < 768){
+            stagesSlider.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                dots: true,
+                arrows: false
+            });
+        } else{
+            stagesSlider.unslick();
+        }
+    });
+
     $("#my-accordion").accordionjs();
 });
