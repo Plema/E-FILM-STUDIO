@@ -1,0 +1,21 @@
+ul{
+    margin: 30px;
+    list-style-type: disc;
+
+    li{
+        list-style-type: disc;
+
+        a{
+            font-family: 'ProximaNova-Bold';
+            font-size: 20px;
+            line-height: 30px;
+            color: #868EA4;
+
+            transition: color 0.2s ease-in;
+
+            &:hover{
+                color: #525D7D;
+            }
+        }
+    }
+}

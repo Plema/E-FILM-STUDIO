@@ -25,8 +25,8 @@ $(function(){
     customersSlider.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        nextArrow: '<button class="slick-arrow next"><img src="../img/arrow-slider.svg"></button>',
-        prevArrow: '<button class="slick-arrow prev"><img src="../img/arrow-slider.svg"></button>',
+        nextArrow: '<button class="slick-arrow next"><img src="img/arrow-slider.svg"></button>',
+        prevArrow: '<button class="slick-arrow prev"><img src="img/arrow-slider.svg"></button>',
     });
 
     // Portfolio slider
@@ -44,8 +44,8 @@ $(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
-        nextArrow: '<button class="slick-arrow next"><img src="../img/arrow-slider.svg"></button>',
-        prevArrow: '<button class="slick-arrow prev"><img src="../img/arrow-slider.svg"></button>',
+        nextArrow: '<button class="slick-arrow next"><img src="img/arrow-slider.svg"></button>',
+        prevArrow: '<button class="slick-arrow prev"><img src="img/arrow-slider.svg"></button>',
     });
 
     //Reviews
@@ -65,15 +65,15 @@ $(function(){
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 adaptiveHeight: true,
-                nextArrow: '<button class="slick-arrow next"><img src="../img/arrow-slider.svg"></button>',
-                prevArrow: '<button class="slick-arrow prev"><img src="../img/arrow-slider.svg"></button>',
+                nextArrow: '<button class="slick-arrow next"><img src="img/arrow-slider.svg"></button>',
+                prevArrow: '<button class="slick-arrow prev"><img src="img/arrow-slider.svg"></button>',
             });
         }else{
             reviewsSlider.unslick();
         }
     });
 
-    //Stages sloder
+    //Stages slider
 
     let stagesSlider = $('.stages-slider');
 

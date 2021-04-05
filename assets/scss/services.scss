@@ -1,14 +1,17 @@
 @import 'libs/slick';
 
 .wrapper{
-    .breadcrumb{
+    .bread-crumbs{
         padding-top: 104px;
 
-        &-inner{
+        ul{
             display: flex;
+            flex-wrap: wrap;
 
-            .breadcrumb-item{
-                display: flex;
+            margin-left: -10px;
+
+            li{
+                margin-left: 10px;
 
                 a{
                     font-family: 'ProximaNova-Semibold';
@@ -16,33 +19,47 @@
                     color: rgba(82,93,125,0.5);
                     line-height: 17px;
 
-                    margin-right: 10px;
-                }
-                img{    
-                    width: 9px;
-                    transform: rotate(-90deg);
+                    padding-right: 15px;
+                    position: relative;
 
-                    margin-right: 10px;
-                }
-
-                &:last-of-type{
-                    a{
-                        color: rgba(82,93,125,1);
+                    &:after{
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        width: 5px;
+                        height: 10px;
+                        content: '';
+                        transform: translate(0, -50%);
+                        background: url(../img/bread-crumbs-icon.svg) no-repeat 50% 50%;
+                        background-size: cover;
                     }
+
+                }
+                span{
+                    font-family: 'ProximaNova-Semibold';
+                    font-size: 14px;
+                    color: rgba(82,93,125,1);
+                    line-height: 17px;
                 }
             }
         }
         @media(min-width: 1024px){
             padding-top: 132px;
 
-            .breadcrumb-inner{
-                .breadcrumb-item{
+            ul{
+                li{
                     a{
                         font-size: 20px;
                         line-height: 24px;
+
+                        &:after{
+                            width: 6px;
+                            height: 12px;
+                        }
                     }
-                    img{
-                        width: 11px;
+                    span{
+                        font-size: 20px;
+                        line-height: 24px;
                     }
                 }
             }
