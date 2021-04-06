@@ -1,0 +1,185 @@
+.wrapper{
+    .bread-crumbs{
+        padding-top: 104px;
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+
+            margin-left: -10px;
+
+            li{
+                margin-left: 10px;
+
+                a{
+                    font-family: 'ProximaNova-Semibold';
+                    font-size: 14px;
+                    color: rgba(82,93,125,0.5);
+                    line-height: 17px;
+
+                    padding-right: 15px;
+                    position: relative;
+
+                    &:after{
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        width: 5px;
+                        height: 10px;
+                        content: '';
+                        transform: translate(0, -50%);
+                        background: url(../img/bread-crumbs-icon.svg) no-repeat 50% 50%;
+                        background-size: cover;
+                    }
+
+                }
+                span{
+                    font-family: 'ProximaNova-Semibold';
+                    font-size: 14px;
+                    color: rgba(82,93,125,1);
+                    line-height: 17px;
+                }
+            }
+        }
+        @media(min-width: 1024px){
+            padding-top: 132px;
+
+            ul{
+                li{
+                    a{
+                        font-size: 20px;
+                        line-height: 24px;
+
+                        &:after{
+                            width: 6px;
+                            height: 12px;
+                        }
+                    }
+                    span{
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+        @media(min-width: 1280px){
+            padding-top: 227px;
+        }
+        @media(min-width: 1680px){
+            padding-top: 253px;
+        }
+    }
+
+    .intro{
+        padding-top: 20px;
+
+        &-inner{
+            background: #525D7D;
+
+            margin: 0 -20px;
+            padding: 30px 20px 35px;
+
+            .intro-title{
+                font-family: 'ProximaNova-Extrabld';
+                font-size: 30px;
+                color: #fff;
+                line-height: 39px;
+                text-align: center;
+
+                margin-bottom: 40px;
+            }
+            .tags{
+                width: 100%;
+
+                margin-bottom: 60px;
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li{
+                        margin: 0 6px 10px;
+
+                        &:first-of-type, &:last-of-type{
+                            a{
+                                color: #525D7D;
+                            }
+                        }
+
+                        a{
+                            display: inline-block;
+                            font-family: 'ProximaNova-Semibold';
+                            font-size: 16px;
+                            color: #fff;
+                            line-height: 24px;
+                            white-space: nowrap;
+
+                            border-radius: 10px;
+
+                            padding: 2px 10px;
+                        }
+                    }
+                }
+            }
+            .intro-info{
+                .intro-author{
+                    display: flex;
+                    align-items: center;
+    
+                    margin-bottom: 30px;
+    
+                    .author-img{
+                        width: 52px;
+                        height: 52px;
+    
+                        border-radius: 50%;
+    
+                        margin-right: 15px;
+                    }
+                    .author-info{
+                        .author-name{
+                            font-family: 'ProximaNova-Regular';
+                            font-size: 16px;
+                            color: #fff;
+                            line-height: 24px;
+    
+                            margin-bottom: 5px;
+                        }
+                        .author-date{
+                            font-family: 'ProximaNova-Regular';
+                            font-size: 16px;
+                            color: rgba(255,255,255,0.7);
+                            line-height: 20px;
+                        }
+                    }
+                }
+                .intro-social{
+                    p{
+                        font-family: 'ProximaNova-Regular';
+                        font-size: 16px;
+                        color: #fff;
+                        line-height: 24px;
+                    }
+                    .intro-items{
+                        display: flex;
+                        align-items: center;
+
+                        .intro-social-item{
+                            margin-right: 25px;
+                            
+                            &:first-of-type{
+                                img{
+                                    width: 46px;
+                                    height: 41px;
+                                }
+                            }
+                            img{
+                                width: 33px;
+                                height: 33px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
