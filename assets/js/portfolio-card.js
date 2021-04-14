@@ -17,4 +17,25 @@ $(function(){
         nextArrow: '<button class="slick-arrow next"><img src="img/arrow-slider.svg"></button>',
         prevArrow: '<button class="slick-arrow prev"><img src="img/arrow-slider.svg"></button>',
     });
+
+    // Example slider
+    var exampleSlider = $('.example-slider');
+
+    exampleSlider.on("init", function(event, slick){
+        $(".example_count").html(parseInt(slick.currentSlide + 1) + ' / <span>' + slick.slideCount + '</span>');
+    });
+
+    exampleSlider.on("afterChange", function(event, slick, currentSlide){
+        $(".example_count").html(parseInt(slick.currentSlide + 1) + ' / <span>' + slick.slideCount + '</span>');
+    });
+
+    exampleSlider.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        nextArrow: '<button class="slick-arrow next"><img src="img/arrow-slider.svg"></button>',
+        prevArrow: '<button class="slick-arrow prev"><img src="img/arrow-slider.svg"></button>',
+    });
+
+    $("#my-accordion").accordionjs();
 });
