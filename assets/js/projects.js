@@ -2,6 +2,8 @@ $(function(){
 
     jcf.replaceAll();
 
+    $("#my-accordion").accordionjs();
+
     //Projects slider
     var projectsSlider = $('.projects-slider');
 
