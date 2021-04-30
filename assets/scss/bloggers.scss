@@ -644,11 +644,13 @@
             h2{
                 color: #FFFFFF;
                 font-size: 30px;
-                padding: 0 30px;
                 font-weight: 800;
                 line-height: 39px;
-                margin-bottom: 20px;
                 font-family: 'ProximaNova-Extrabld';
+
+                &:last-of-type{
+                    margin-bottom: 20px;
+                }
             }
             p{
                 font-size: 18px;
@@ -799,16 +801,25 @@
                 }
             }
         }
+        @media (min-width: 414px){
+            .title{
+                padding-top: 40px;
+            }
+        }
         @media (min-width: 768px) {  
             padding: 200px 0 140px;     
             .title {
                 width: 540px;
                 margin: 0 auto 27px;
+                padding-top: 0;
                 h2 {
                     padding: 0;
                     font-size: 34px;
                     line-height: 42px;
-                    margin-bottom: 20px;
+
+                    &:last-of-type{
+                        margin-bottom: 20px;
+                    }
                 }
                 p{
                     padding: 0 50px;
@@ -823,7 +834,10 @@
                 h2 {
                     font-size: 36px;
                     line-height: 48px;
-                    margin-bottom: 20px;
+
+                    &:last-of-type{
+                        margin-bottom: 20px;
+                    }
                 }
                 p {
                     padding: 0;
@@ -895,17 +909,22 @@
                 h2 {
                     font-size: 42px;
                     line-height: 50px;
-                    margin-bottom: 30px;
+                    
+                    &:last-of-type{
+                        margin-bottom: 30px;
+                    }
                 }
             }
         }
         @media (min-width: 1400px) {
             padding: 300px 0 230px;
             .title {
-                width: 965px;
+                width: 1315px;
                 h2 {
                     font-size: 52px;
                     line-height: 60px;
+                }
+                &:last-of-type{
                     margin-bottom: 35px;
                 }
                 p{
@@ -944,8 +963,11 @@
                 margin: 0 auto 70px;
                 h2 {
                     font-size: 64px;
-                    line-height: 70px;
-                    margin-bottom: 45px;
+                    line-height: 83px;
+                    
+                    &:last-of-type{
+                        margin-bottom: 45px;
+                    }
                 }
             }
         }
@@ -1129,7 +1151,7 @@
             }
         }
         @media (min-width: 1680px) {
-            padding: 150px 0 250px;
+            padding: 150px 0 200px;
 
             .top-link{
                 bottom: 30px;
