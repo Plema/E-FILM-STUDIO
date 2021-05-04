@@ -69,4 +69,174 @@
             padding-top: 253px;
         }
     }
+
+    .contacts{
+        padding-top: 40px;
+        
+        &-title{
+            font-family: 'ProximaNova-Extrabld';
+            font-size: 30px;
+            line-height: 39px;
+            color: #525D7D;
+            text-align: center;
+
+            margin-bottom: 20px;
+        }
+        &-info{
+            .location, .hours, .phone, .email{
+                display: flex;
+                align-items: flex-start;
+
+                margin-bottom: 20px;
+
+                img{
+                    margin-top: 5px;
+                }
+
+                p, a{
+                    font-family: 'ProximaNova-Regular';
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #525D7D;
+
+                    margin-left: 23px;
+                }
+            }
+        }
+        &-map{
+            position: absolute;
+
+            width: 100%;
+            height: 320px;
+
+            background: url('../img/map.svg') no-repeat;
+            background-position: 72% 0px;
+            background-size: 420%;
+        }
+        @media (min-width: 375px){
+            &-map{
+                height: 400px;
+                background: url('../img/map.svg') no-repeat;
+                background-position: 72% 0px;
+                background-size: 360%;
+            }
+        }
+        @media (min-width: 768px){
+            &-map{
+                height: 500px;
+                background: url('../img/map.svg') no-repeat;
+                background-position: 72% 0px;
+                background-size: 180%;
+            }
+        }
+        @media (min-width: 1024px){
+            padding-top: 56px;
+
+            &-title{
+                font-size: 48px;
+                line-height: 62px;
+
+                margin-bottom: 40px;
+            }
+            &-info{
+                display: flex;
+                flex-wrap: wrap;
+
+                .location, .hours, .phone, .email{
+                    margin: 0 30px 30px 0;
+
+                    p, a{
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+                }
+            }
+            &-map{
+                width: 964px;
+                height: 500px;
+                background: url('../img/map.svg') no-repeat;
+                background-position: center;
+                background-size: 150%;
+                border-radius: 30px;
+
+                margin-left: 30px;
+            }
+        }
+        @media (min-width: 1280px){
+            &-map{
+                width: 1200px;
+                height: 500px;
+                background: url('../img/map.svg') no-repeat;
+                background-position: center;
+                background-size: 150%;
+                border-radius: 30px;
+
+                margin-left: 40px;
+            }
+        }
+        @media (min-width: 1440px){
+            &-map{
+                width: 1340px;
+                height: 586px;
+                background: url('../img/map.svg') no-repeat;
+                background-position: center;
+                background-size: 120%;
+                border-radius: 30px;
+
+                margin-left: 50px;
+            }
+        }
+        @media (min-width: 1680px){
+            padding-top: 64px;
+
+            &-title{
+                font-size: 72px;
+                line-height: 94px;
+
+                margin-bottom: 70px;
+            }
+            &-info{
+                .location, .hours, .phone{
+                    margin: 0 40px 40px 0; 
+                }
+            }
+            &-map{
+                width: 1520px;
+                height: 586px;
+                background: url('../img/map.svg') no-repeat;
+                background-position: center;
+                background-size: 100%;
+                border-radius: 30px;
+
+                margin-left: 80px;
+            }
+        }
+        @media (min-width: 1680px){
+            &-map{
+                margin-left: 200px;
+            }
+        }
+    }
+}
+.footer{
+    margin-top: 100px;
+
+    @media (min-width: 375px){
+        margin-top: 120px;
+    }
+    @media (min-width: 410px){
+        margin-top: 150px;
+    }
+    @media (min-width: 1280px){
+        margin-top: 250px;
+    }
+    @media (min-width: 1440px){
+        margin-top: 300px;
+    }
+    @media (min-width: 1680px){
+        margin-top: 340px;
+    }
+    @media (min-width: 1920px){
+        margin-top: 360px;
+    }
 }
