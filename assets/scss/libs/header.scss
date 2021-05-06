@@ -32,17 +32,77 @@
         }
         nav{
             display: none;
+
+            margin-top: 20px;
+            padding-top: 23px;
+
+            border-top: 1px #E0DFE6 solid;
+
+            .cities-mob{
+                position: relative;
+                padding-left: 35px;
+
+                &::after{
+                    content: '';
+                    left: 0;
+                    top: 50%;
+                    width: 20px;
+                    height: 26px;
+                    position: absolute;
+                    background: url('../img/cities.svg') no-repeat 50% 50%;
+                    background-size: cover;
+                    transform: translate(0, -50%);
+                }
+                ul{
+                    li{
+                        position: relative;
+                        padding-right: 15px;
+                        &::after{
+                            content: '';
+                            top: 55%;
+                            width: 10px;
+                            height: 5px;
+                            position: absolute;
+                            background: url('../img/arrow-drop.svg') no-repeat 50% 50%;
+                            background-size: cover;
+                            transform: translate(0, -50%);
+                        }
+                        a{
+                            font-size: 16px;
+                            color: #525D7D;
+                            font-weight: 600;
+                            line-height: 22px;
+                            font-family: 'ProximaNova-Semibold';
+                            margin-right: 11px;
+                        }
+                    }
+                }
+            }
+            .nav-inner{
+                margin-top: 23px;
+                padding-top: 10px;
+                
+                border-top: 1px #E0DFE6 solid;
+
+                li{
+                    a{
+                        font-family: 'ProximaNova-Semibold';
+                        font-size: 18px;
+                        line-height: 45px;
+                        color: rgba(82, 93, 125, 0.7);
+                    }
+                }
+            }
         }
         .feedback_link{
             display: none;
         }
         .open-menu{
-            top: 50%;
+            top: 28px;
             right: 0;
             width: 24px;
             height: 20px;
             position: absolute;
-            transform: translate(0, -50%);
             &::before{
                 content: '';
                 top: 0;

@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'download';
-  src: url('../font/download.eot?35161525');
-  src: url('../font/download.eot?35161525#iefix') format('embedded-opentype'),
-       url('../font/download.woff2?35161525') format('woff2'),
-       url('../font/download.woff?35161525') format('woff'),
-       url('../font/download.ttf?35161525') format('truetype'),
-       url('../font/download.svg?35161525#download') format('svg');
+  src: url('../font/download.eot?20930397');
+  src: url('../font/download.eot?20930397#iefix') format('embedded-opentype'),
+       url('../font/download.woff2?20930397') format('woff2'),
+       url('../font/download.woff?20930397') format('woff'),
+       url('../font/download.ttf?20930397') format('truetype'),
+       url('../font/download.svg?20930397#download') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'download';
-    src: url('../font/download.svg?35161525#download') format('svg');
+    src: url('../font/download.svg?20930397#download') format('svg');
   }
 }
 */
@@ -56,3 +56,4 @@
 }
  
 .icon-star:before { content: '\e800'; } /* '' */
+.icon-star-reviews:before { content: '\e876'; } /* '' */

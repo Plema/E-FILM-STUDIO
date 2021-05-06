@@ -1,0 +1,41 @@
+<div class="reviews-popup hide">
+    <div class="reviews-popup-inner">
+        <img class="close-popup" src="img/close-popups.svg"></img>
+        <h3 class="reviews-popup-title">Оставте отзыв</h3>
+        <div class="reviews-popup-info">
+            <p>Оцените нашу работу:</p>
+            <div class="reviews-rate">
+                <input id="rating-5" type="radio" name="rating" value="5"/><label for="rating-5"><i class="icon-star"></i></label>
+                <input id="rating-4" type="radio" name="rating" value="4" checked /><label for="rating-4"><i class="icon-star"></i></label>
+                <input id="rating-3" type="radio" name="rating" value="3"/><label for="rating-3"><i class="icon-star"></i></label>
+                <input id="rating-2" type="radio" name="rating" value="2"/><label for="rating-2"><i class="icon-star"></i></label>
+                <input id="rating-1" type="radio" name="rating" value="1"/><label for="rating-1"><i class="icon-star"></i></label>
+            </div>
+        </div>
+        <form>
+            <div class="form-content-popup">
+                <div class="inputs-popup">
+                    <input type="text" placeholder='Имя*'>
+                    <input type="text" placeholder='Фамилия*'>
+                    <input type="text" placeholder='Род деятельности'>
+                    <input type="text" placeholder='Тема*'>
+                </div>
+                <textarea placeholder="Сообщение*"></textarea>
+                <div class="file-popup">
+                    <div class="file-popup-text">
+                        <p class="file-popup-title">Медиа материалы:</p>
+                        <p class="file-popup-info">Вы можете прекрепить видео или фото в форматах JPG, PNG, MP4, AVI</p>
+                    </div>
+                    <div class="file-popup-items">
+                        <img src="img/add-media.svg" alt="">
+                        <input type="file" accept=".jpg, .png, .avi, .mp4">
+                    </div>
+                </div>
+                <div class="reviews-popup-button">
+                    <button>Отправить</button>
+                    <span>Продолжая, вы соглашаетесь на обработку персональных данных</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

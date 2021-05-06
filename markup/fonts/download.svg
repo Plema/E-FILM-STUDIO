@@ -7,6 +7,8 @@
 <font-face font-family="download" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
 <glyph glyph-name="star" unicode="&#xe800;" d="M546 850l122-377h396l-320-233 122-377-320 233-321-233 122 377-320 233h396l123 377z" horiz-adv-x="1091" />
+
+<glyph glyph-name="star-reviews" unicode="&#xe876;" d="M494 808c9 27 49 27 58 0l97-299c4-13 15-21 28-21h315c29 0 41-38 17-55l-254-184c-10-8-15-22-11-34l97-299c9-28-23-51-46-34l-254 185c-11 7-25 7-36 0l-254-185c-24-17-56 6-47 34l97 299c4 12 0 26-11 34l-254 184c-24 17-11 55 18 55h314c13 0 25 8 29 21l97 299z" horiz-adv-x="1030" />
 </font>
 </defs>
 </svg>
