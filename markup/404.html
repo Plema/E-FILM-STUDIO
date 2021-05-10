@@ -17,8 +17,12 @@
         <div class="header-top">
             <div class="cities-languages">
                 <div class="cities">
-                    <ul>
-                        <li><a href="javascript:void(0)">Екатеринбург</a></li>
+                    <span class="default">Екатеринбург <span class="arrow"></span></span>
+                    <ul class="dropdown-list hide">
+                        <li data-value="1"><a href="javascript:void(0)">Екатеринбург</a></li>
+                        <li data-value="1"><a href="javascript:void(0)">Москва</a></li>
+                        <li data-value="2"><a href="javascript:void(0)">Санкт-Петербург</a></li>
+                        <li data-value="3"><a href="javascript:void(0)">Саратов</a></li>
                     </ul>
                 </div>
                 <ul class="languages">
@@ -47,26 +51,89 @@
             </div>
             <nav>
                 <div class="cities-mob">
-                    <ul>
-                        <li><a href="javascript:void(0)">Екатеринбург</a></li>
+                    <span class="default">Екатеринбург <span class="arrow"></span></span>
+                    <ul class="dropdown-list hide">
+                        <li data-value="1"><a href="javascript:void(0)">Екатеринбург</a></li>
+                        <li data-value="1"><a href="javascript:void(0)">Москва</a></li>
+                        <li data-value="2"><a href="javascript:void(0)">Санкт-Петербург</a></li>
+                        <li data-value="3"><a href="javascript:void(0)">Саратов</a></li>
                     </ul>
                 </div>
                 <ul class="nav-inner">
-                    <li><a href="javascript:void(0)">Услуги</a></li>
-                    <li><a href="javascript:void(0)">Портфолио</a></li>
-                    <li><a href="javascript:void(0)">Блог</a></li>
-                    <li><a href="javascript:void(0)">Вакансии</a></li>
-                    <li><a href="javascript:void(0)">Контакты</a></li>
-                    <li><a href="javascript:void(0)">Отзывы</a></li>
-                    <li><a href="javascript:void(0)">Проекты</a></li>
-                    <li><a href="javascript:void(0)">Рекламодателям</a></li>
-                    <li><a href="javascript:void(0)">Коллаборации с блоггерами</a></li>
+                    <p class="title-nav">Категории</p>
+                    <li class="nav-inner-item"><a href="javascript:void(0)">Услуги</a>
+                        <ul class="subnav">
+                            <li class="subnav-item"><a href="javascript:void(0)">Видеопродакшн</a>
+                                <ul class="second-subnav">
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Видео для ютюба и социальных сетей</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Аэросъемка</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Онлайн трансляции</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">3D графика</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Съемка мероприятий</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Обзоры товаров</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Анимационные ролики</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Презентация компании</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Вирусная реклама</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Кулинарная съемка</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Добавить VR 360°</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Круговые панорамы</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Съемка рекламы</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Съемка клипов</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Учебные фильмы</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Съемка интервью</a></li>
+                                </ul>
+                            </li>
+                            <li class="subnav-item"><a href="javascript:void(0)">Разработка сайтов</a>
+                                <ul class="second-subnav">
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Корпоративные сайты
+                                    </a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Landing page</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Интернет-магазины
+                                    </a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Сайты каталоги
+                                    </a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Сайты визитки
+                                    </a></li>
+                                </ul>
+                            </li>
+                            <li class="subnav-item"><a href="javascript:void(0)">Интернет маркетинг</a>
+                                <ul class="second-subnav">
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Контекстная реклама</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">SMM</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Таргетированная реклама</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Продвижение сайтов SEO</a></li>
+                                    <li class="second-subnav-item"><a href="javascript:void(0)">Продвижение ютьюб каналов</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-inner-item"><a href="javascript:void(0)">Портфолио</a></li>
+                    <li class="nav-inner-item"><a href="javascript:void(0)">Блог</a></li>
+                    <li class="nav-inner-item"><a href="javascript:void(0)">Вакансии</a></li>
+                    <li class="nav-inner-item"><a href="javascript:void(0)">Контакты</a></li>
+                    <li class="nav-inner-item"><a href="javascript:void(0)">Отзывы</a></li>
+                    <li class="nav-inner-item"><a href="javascript:void(0)">Проекты</a></li>
+                    <li class="nav-inner-item"><a href="javascript:void(0)">Рекламодателям</a></li>
+                    <li class="nav-inner-item"><a href="javascript:void(0)">Коллаборации с блоггерами</a></li>
                 </ul>
+                <div class="contact-lang-mob">
+                    <ul class="numbers-mob">
+                        <li><a href="tel:+7 (343) 383-56-49">+7 (343) 383-56-49</a></li>
+                        <li><a href="tel:+7 (343) 383-56-49">+7 (343) 383-56-49</a></li>
+                    </ul>
+                    <ul class="lang-mob">
+                        <li class="active"><a href="javascript:void(0)">RU</a></li>
+                        <li><a href="javascript:void(0)">EN</a></li>
+                        <li><a href="javascript:void(0)">CH</a></li>
+                    </ul>
+                    <!-- <a class="feedback_link" href="javascript:void(0)">Оставить заявку</a> -->
+                </div>
             </nav>
             <a class="feedback_link" href="javascript:void(0)">Оставить заявку</a>
             <span class="open-menu">
                 <span></span>
             </span>
+            <div class="header-nav-bg"></div>
         </div>
     </div>
 </header>

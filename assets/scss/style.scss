@@ -98,6 +98,17 @@ a {
 
 .wrapper{
     overflow: hidden;
+
+    .blackout{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+
+        background: rgba(82, 93, 125, 0.5);
+    }
 }
 
 .container {
