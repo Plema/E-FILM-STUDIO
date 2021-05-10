@@ -3,7 +3,7 @@
     z-index: 1;
 
     padding: 140px 0 0;
-    margin-top: -120px;
+    margin-top: -40px;
     overflow: hidden;
 
     &:before{
@@ -11,7 +11,7 @@
         width: 100%;
         height: 100%;
 
-        background: url('../img/footer-before.png') no-repeat 100% 0;
+        background: url('../img/footer-before.png') no-repeat 100% 0%;
         background-size: cover !important;
 
         position: absolute;
@@ -21,7 +21,7 @@
     }
 
     .footer-inner{
-        padding-top: 60px;
+        padding-top: 20px;
     }
 
     .footer-logo{
@@ -100,16 +100,34 @@
         margin-bottom: 20px;
         width: 250px;
         nav{
-            ul{
-                li{
+            .footer-nav-inner{
+                &-item{
                     a{
                         font-family: 'ProximaNova-Semibold';
                         font-size: 18px;
                         color: rgba(255,255,255,0.7);
                         line-height: 45px;
+
+                        position: relative;
+
+                        .subnav-footer-arrow{
+                            top: 50%;
+                            width: 10px;
+                            height: 5px;
+                            position: absolute;
+                            background: url('../img/footer-nav-arrow.svg') no-repeat 50% 50%;
+                            background-size: cover;
+
+                            transform: translate(0, -40%);
+
+                            margin-left: 11px;
+                        }
                     }
-                    ul{
-                        li{
+                    .subnav-footer{
+                        display: none;
+
+                        &-item{
+                            margin-bottom: 20px;
                             a{
                                 font-family: 'ProximaNova-Regular';
                                 line-height: 27px;
@@ -192,7 +210,7 @@
             justify-content: center;
             align-items: flex-start;
 
-            padding-top: 140px;
+            padding-top: 60px;
 
             .footer-logo{
                 width: 25%;
@@ -332,7 +350,7 @@
     }
     @media(min-width: 1024px){
         .footer-inner{
-            padding-top: 250px;
+            padding-top: 120px;
 
             .footer-logo{
                 &-img{
@@ -465,7 +483,7 @@
                     order: 2;
                 }
                 .follow{
-                    top: 54%;
+                    top: 345px;
                     left: 64%;
 
                     .follow-title{
@@ -515,7 +533,7 @@
                     width: 20%
                 }
                 .follow{
-                    top: 32%;
+                    top: 195px;
                     left: 56%;
                 }
             }
@@ -526,7 +544,7 @@
                 padding: 0;
 
                 position: absolute;
-                top: 792px;
+                top: 665px;
                 left: 655px;
 
                 .policy{
