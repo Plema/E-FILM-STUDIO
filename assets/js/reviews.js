@@ -32,4 +32,34 @@ $(function(){
     jcf.replaceAll();
 
     $("#my-accordion").accordionjs();
+
+    // Fancybox
+    $('.media-item').fancybox({
+        parentEl: '.fancybox',
+        clickContent: false,
+        padding: 0,
+        thumbs: false,
+        loop: true,
+        // touch: false,
+        arrows: true,
+        transitionDuration: 500,
+        hash: false,
+        overlayColor: '#fff',
+        autoSize : false,
+        beforeShow: function(){
+            $("body").css({'overflow-y':'hidden'});
+        },
+        afterClose: function(){
+            $("body").css({'overflow-y':'auto'});
+            if($('body').css('overflow-y') == 'auto'){
+                $('.blackout-fancy').remove();
+            }
+        },
+    });
+
+    $('.media-item').on('click', function(){
+        $('.fancybox-container').toggle();
+
+        $('.wrapper').append('<div class="blackout-fancy"></div>');
+    });
 });
