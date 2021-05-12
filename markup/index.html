@@ -141,25 +141,142 @@
 </header>
 
   <!-- Leave-request-project-popup -->
-  <!-- <include src="assets/templates/project-popup.html"></include> -->
+  <div class="project-popup hide">
+    <div class="project-popup-inner">
+        <img class="close-popup" src="img/close-popups.svg">
+        <h3 class="project-popup-title">Оставте заявку на свой проект</h3>
+        <p class="project-popup-info">Прежде чем отправлять заявку, скачайте и заполните <a href="javascript:void(0)">наш подготовленный бриф,</a> чтобы мы могли ознакомиться с вашей компанией и идеей</p>
+        <form>
+            <div class="form-content-popup">
+                <div class="inputs-popup">
+                    <input type="text" placeholder="Имя*">
+                    <input type="text" placeholder="Телефон*">
+                    <input type="text" placeholder="E-mail*">
+                </div>
+                <textarea placeholder="Расскажите немного о вашем проекте"></textarea>
+                <div class="file-popup">
+                    <p>Прикрепить заполненный бриф</p>
+                    <input type="file">
+                </div>
+                <div class="project-popup-button">
+                    <button>Отправить</button>
+                    <span>Продолжая, вы соглашаетесь на обработку персональных данных</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 
   <!-- Thanks-project-popup -->
-  <!-- <include src="assets/templates/thanks-project-popup.html"></include> -->
+  <div class="thanks-project-popup hide">
+    
+    <div class="thanks-project-popup-inner">
+        <img class="close-popup" src="img/close-popups.svg">
+        <img src="img/thanks-icon-popup.svg" alt="">
+        <h3 class="thanks-popup-title">Спасибо за заявку!</h3>
+        <p class="thanks-popup-info">Заявка отправлена. Наш специалист ознакомиться с прикрепленным брифом и перезвонит вам для дальнейшей консультации.</p>
+    </div>
+</div>
 
   <!-- Error-project-popup -->
-  <!-- <include src="assets/templates/error-project-popup.html"></include> -->
+  <div class="error-project-popup hide">
+    
+    <div class="error-project-popup-inner">
+        <img class="close-popup" src="img/close-popups.svg">
+        <img src="img/error-icon-popup.svg" alt="">
+        <h3 class="error-popup-title">Ошибка!</h3>
+        <p class="error-popup-info">Заявка не отправлена. Пожалуйста, обновите страницу и повторите попытку :с</p>
+    </div>
+</div>
 
   <!-- Vacancy request -->
-  <!-- <include src="assets/templates/vacancy-popup.html"></include> -->
+  <div class="vacancy-popup hide">
+    <div class="vacancy-popup-inner">
+        <img class="close-popup" src="img/close-popups.svg">
+        <h3 class="vacancy-popup-title">Оставить заявку на вакансию:</h3>
+        <p class="vacancy-popup-info">Специалист по прадажам</p>
+        <form>
+            <div class="form-content-popup">
+                <div class="inputs-popup">
+                    <input type="text" placeholder="Имя*">
+                    <input type="text" placeholder="Фамилия*">
+                    <input type="text" placeholder="Телефон*">
+                    <input type="text" placeholder="E-mail*">
+                </div>
+                <div class="vacancy-popup-button">
+                    <button>Отправить</button>
+                    <span>Продолжая, вы соглашаетесь на обработку персональных данных</span>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
 
   <!-- Leave review -->
-  <!-- <include src="assets/templates/reviews-popup.html"></include> -->
+  <div class="reviews-popup hide">
+    <div class="reviews-popup-inner">
+        <img class="close-popup" src="img/close-popups.svg">
+        <h3 class="reviews-popup-title">Оставте отзыв</h3>
+        <div class="reviews-popup-info">
+            <p>Оцените нашу работу:</p>
+            <div class="reviews-rate">
+                <input id="rating-5" type="radio" name="rating" value="5"><label for="rating-5"><i class="icon-star"></i></label>
+                <input id="rating-4" type="radio" name="rating" value="4" checked=""><label for="rating-4"><i class="icon-star"></i></label>
+                <input id="rating-3" type="radio" name="rating" value="3"><label for="rating-3"><i class="icon-star"></i></label>
+                <input id="rating-2" type="radio" name="rating" value="2"><label for="rating-2"><i class="icon-star"></i></label>
+                <input id="rating-1" type="radio" name="rating" value="1"><label for="rating-1"><i class="icon-star"></i></label>
+            </div>
+        </div>
+        <form>
+            <div class="form-content-popup">
+                <div class="inputs-popup">
+                    <input type="text" placeholder="Имя*">
+                    <input type="text" placeholder="Фамилия*">
+                    <input type="text" placeholder="Род деятельности">
+                    <input type="text" placeholder="Тема*">
+                </div>
+                <textarea placeholder="Сообщение*"></textarea>
+                <div class="file-popup">
+                    <div class="file-popup-text">
+                        <p class="file-popup-title">Медиа материалы:</p>
+                        <p class="file-popup-info">Вы можете прекрепить видео или фото в форматах JPG, PNG, MP4, AVI</p>
+                    </div>
+                    <div class="file-popup-items">
+                        <img src="img/add-media.svg" alt="">
+                        <input type="file" accept=".jpg, .png, .avi, .mp4">
+                    </div>
+                </div>
+                <div class="reviews-popup-button">
+                    <button>Отправить</button>
+                    <span>Продолжая, вы соглашаетесь на обработку персональных данных</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 
   <!-- Thanks-reviews-popup -->
-  <!-- <include src="assets/templates/thanks-reviews-popup.html"></include> -->
+  <div class="thanks-reviews-popup hide">
+    
+    <div class="thanks-reviews-popup-inner">
+        <img class="close-popup" src="img/close-popups.svg">
+        <img src="img/thanks-icon-popup.svg" alt="">
+        <h3 class="thanks-popup-title">Спасибо за отзыв!</h3>
+        <p class="thanks-popup-info">Отзыв отправлен. Наш модератор ознакомиться с отзывом, проверит его на цензуру и опубликует.</p>
+    </div>
+</div>
 
   <!-- Error-reviews-popup -->
-  <!-- <include src="assets/templates/error-reviews-popup.html"></include> -->
+  <div class="error-reviews-popup hide">
+    
+    <div class="error-reviews-popup-inner">
+        <img class="close-popup" src="img/close-popups.svg">
+        <img src="img/error-icon-popup.svg" alt="">
+        <h3 class="error-popup-title">Ошибка!</h3>
+        <p class="error-popup-info">Отзыв не отправлен. Пожалуйста, обновите страницу и повторите попытку :с</p>
+    </div>
+</div>
 
   <!-- Fancybox-popup -->
   <div class="fancybox"></div>

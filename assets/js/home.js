@@ -103,25 +103,12 @@ $(function(){
                 $('.blackout-fancy').remove();
             }
         },
-        // iframe : {
-        //     css : {
-        //         height : '600px'
-        //     }
-        // }
     });
 
     $('.media-item').on('click', function(){
         $('.fancybox-container').toggle();
 
         $('.wrapper').append('<div class="blackout-fancy"></div>');
-
-        // var itemWidth = $('.fancybox-iframe').width();
-        //     function resizer() {
-        //         $('.fancybox-iframe').css({
-        //             height: (itemWidth * 0.5) + 'px'
-        //         });
-        //     }
-        // resizer();
     });
 
 
