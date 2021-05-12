@@ -6,6 +6,7 @@ $(function(){
         });    
     }
 
+    
     $('.our-services .filter li').on('click', function(){
         $('.filter li').removeClass('active');
         $(this).addClass('active');
@@ -79,5 +80,47 @@ $(function(){
             reviewsSlider.unslick();
         }
     });
+
+    // Fancybox
+    $('.media-item').fancybox({
+        parentEl: '.fancybox',
+        clickContent: false,
+        padding: 0,
+        thumbs: false,
+        loop: true,
+        // touch: false,
+        arrows: true,
+        transitionDuration: 500,
+        hash: false,
+        overlayColor: '#fff',
+        beforeShow: function(){
+            $("body").css({'overflow-y':'hidden'});
+        },
+        afterClose: function(){
+            $("body").css({'overflow-y':'auto'});
+            if($('body').css('overflow-y') == 'auto'){
+                $('.blackout-fancy').remove();
+            }
+        },
+        iframe: {
+            fullscreen: false,
+        }
+    });
+
+    $('.media-item').on('click', function(){
+        $('.fancybox-container').toggle();
+
+        $('.wrapper').append('<div class="blackout-fancy"></div>');
+
+        // if($('.fancybox-slide--current').hasClass('fancybox-slide--video')){
+        //     console.log('wwwwww');
+        //     var video_data = $('iframe').data('src');
+        //     $('iframe').attr('src', video_data);
     
+        // } else{
+        //     $('.slider__img_item iframe').attr('src', '');
+        // }
+    });
+
+
 });

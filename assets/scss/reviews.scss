@@ -286,14 +286,38 @@
                         .content-media{
                             display: flex;
                             overflow-x: scroll;
+                            position: relative;
+                            z-index: 2;
                             
                             margin-bottom: 20px;
     
                             &-item{
                                 margin-right: 16px;
                                 cursor: pointer;
+
+                                position: relative;
     
                                 .media-item{
+                                    &:after{
+                                        content: '';
+                                        width: 78px;
+                                        height: 79px;
+    
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+    
+                                        opacity: 0;
+    
+                                        background: #000;
+                                        border-radius: 20px;
+    
+                                        transition: opacity 0.2s;
+                                    }
+    
+                                    &:hover:after{
+                                        opacity: 0.6;
+                                    }
                                     img{
                                         width: 78px;
                                         height: auto;
@@ -306,7 +330,6 @@
                                 }
                             }
                             .video{
-                                position: relative;
                                 &:before{
                                     display: block;
                                     content: url(../img/play-video.svg);
@@ -678,6 +701,11 @@
                                     margin-right: 40px;
                                     
                                     .media-item{
+                                        &:after{
+                                            width: 100px;
+                                            height: 101px;
+                                            border-radius: 30px;
+                                        }
                                         img{
                                             width: 100px;
                                         }
@@ -1251,7 +1279,7 @@
         .top-link{
             left: 50%;
             width: 50px;
-            bottom: -80px;
+            bottom: -50px;
             position: absolute;
             z-index: 10;
             transform: translate(-50%, 0);

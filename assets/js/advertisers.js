@@ -1,6 +1,7 @@
 $(function(){
 
     jcf.replaceAll();
+
     $("#my-accordion").accordionjs();
 
     $('.portfolio .filter li').on('click', function(){
@@ -28,5 +29,6 @@ $(function(){
             prevArrow: '<button class="slick-arrow prev"><img src="img/arrow-slider.svg"></button>',
         });
     }
-    
+    $("#my-accordion").accordionjs();
+
 });

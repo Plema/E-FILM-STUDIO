@@ -2001,12 +2001,36 @@
                             margin-right: 16px;
                             cursor: pointer;
 
+                            position: relative;
+
                             .media-item{
+
+                                &:after{
+                                    content: '';
+                                    width: 78px;
+                                    height: 79px;
+
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+
+                                    opacity: 0;
+
+                                    background: #000;
+                                    border-radius: 20px;
+
+                                    transition: opacity 0.2s;
+                                }
+
+                                &:hover:after{
+                                    opacity: 0.6;
+                                }
                                 img{
                                     width: 78px;
                                     height: auto;
 
                                     border-radius: 20px;
+
                                 }
                             }
                             &:last-child{
@@ -2014,13 +2038,13 @@
                             }
                         }
                         .video{
-                            position: relative;
                             &:before{
                                 display: block;
                                 content: url(../img/play-video.svg);
                                 position: absolute;
                                 top: 26px;
                                 left: 50%;
+                                z-index: 20;
 
                                 transform: translate(-50%, 0);
                             }
@@ -2286,12 +2310,20 @@
                             margin-top: 31px;
                             margin-bottom: 0px;
 
+                            position: relative;
+                            z-index: 2;
+
                             overflow-x: visible;
 
                             &-item{
                                 margin-right: 40px;
                                 
                                 .media-item{
+                                    &:after{
+                                        width: 100px;
+                                        height: 101px;
+                                        border-radius: 30px;
+                                    }
                                     img{
                                         width: 100px;
                                     }
@@ -2986,5 +3018,18 @@
             top: 49.7%;
             width: 534px;
         }
+    }
+}
+.blackout-fancy{
+    @media(min-width: 1024px){
+        width: 100%;
+        height: 100vh;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 11;
+
+        background: rgba(82, 93, 125, 0.5);
     }
 }
