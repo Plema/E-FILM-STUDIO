@@ -1450,6 +1450,13 @@
 
                     .fancybox-content{
                         height: 100% !important;
+
+                        .fancybox-iframe{
+                            // height: auto !important;
+
+                            // top: 50%;
+                            // transform: translate(0, -50%);
+                        }
                     }
                 }
             }
@@ -1550,9 +1557,7 @@
                     .fancybox-slide--video{
                         .fancybox-content{
                             .fancybox-iframe{
-                                .html5-video-player .video-stream{
-                                    top: 0 !important;
-                                }
+                                // height: auto !important;
                             }
                         }
                     }

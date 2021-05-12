@@ -32,8 +32,8 @@ $(function(){
     customersSlider.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        nextArrow: '<button class="slick-arrow next"><img src="../img/arrow-slider.svg"></button>',
-        prevArrow: '<button class="slick-arrow prev"><img src="../img/arrow-slider.svg"></button>',
+        nextArrow: '<button class="slick-arrow next"><img src="img/arrow-slider.svg"></button>',
+        prevArrow: '<button class="slick-arrow prev"><img src="img/arrow-slider.svg"></button>',
     });
 
     $("#my-accordion").accordionjs();
@@ -52,8 +52,8 @@ $(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
-        nextArrow: '<button class="slick-arrow next"><img src="../img/arrow-slider.svg"></button>',
-        prevArrow: '<button class="slick-arrow prev"><img src="../img/arrow-slider.svg"></button>',
+        nextArrow: '<button class="slick-arrow next"><img src="img/arrow-slider.svg"></button>',
+        prevArrow: '<button class="slick-arrow prev"><img src="img/arrow-slider.svg"></button>',
     });
 
     //Reviews
@@ -73,8 +73,8 @@ $(function(){
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 adaptiveHeight: true,
-                nextArrow: '<button class="slick-arrow next"><img src="../img/arrow-slider.svg"></button>',
-                prevArrow: '<button class="slick-arrow prev"><img src="../img/arrow-slider.svg"></button>',
+                nextArrow: '<button class="slick-arrow next"><img src="img/arrow-slider.svg"></button>',
+                prevArrow: '<button class="slick-arrow prev"><img src="img/arrow-slider.svg"></button>',
             });
         }else{
             reviewsSlider.unslick();
@@ -93,6 +93,7 @@ $(function(){
         transitionDuration: 500,
         hash: false,
         overlayColor: '#fff',
+        autoSize : false,
         beforeShow: function(){
             $("body").css({'overflow-y':'hidden'});
         },
@@ -102,9 +103,11 @@ $(function(){
                 $('.blackout-fancy').remove();
             }
         },
-        iframe: {
-            fullscreen: false,
-        }
+        // iframe : {
+        //     css : {
+        //         height : '600px'
+        //     }
+        // }
     });
 
     $('.media-item').on('click', function(){
@@ -112,14 +115,13 @@ $(function(){
 
         $('.wrapper').append('<div class="blackout-fancy"></div>');
 
-        // if($('.fancybox-slide--current').hasClass('fancybox-slide--video')){
-        //     console.log('wwwwww');
-        //     var video_data = $('iframe').data('src');
-        //     $('iframe').attr('src', video_data);
-    
-        // } else{
-        //     $('.slider__img_item iframe').attr('src', '');
-        // }
+        // var itemWidth = $('.fancybox-iframe').width();
+        //     function resizer() {
+        //         $('.fancybox-iframe').css({
+        //             height: (itemWidth * 0.5) + 'px'
+        //         });
+        //     }
+        // resizer();
     });
 
 
