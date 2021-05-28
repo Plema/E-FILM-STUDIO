@@ -1,5 +1,25 @@
 $(function(){
 
+    $('.services .filter li').on('click', function(){
+        $('.services .filter li').removeClass('active');
+        $(this).addClass('active');
+        if($(this).hasClass('active') && $(this).hasClass('video-services')){
+            $('.our-services-items').addClass('hide');
+            $('.video-items').removeClass('hide');
+            $('.video-items').addClass('show-flex');
+        }
+        if($(this).hasClass('active') && $(this).hasClass('site-services')){
+            $('.our-services-items').addClass('hide');
+            $('.site-items').removeClass('hide');
+            $('.site-items').addClass('show-flex');
+        }
+        if($(this).hasClass('active') && $(this).hasClass('marketing-services')){
+            $('.our-services-items').addClass('hide');
+            $('.marketing-items').removeClass('hide');
+            $('.marketing-items').addClass('show-flex');
+        }
+    });
+
     //Blog-nav
     var block_show = null;
  

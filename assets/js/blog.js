@@ -2,8 +2,28 @@ $(function(){
 
     //Blog filter
     $('.blog .filter li').on('click', function(){
-        $('.filter li').removeClass('active');
+        $('.blog .filter li').removeClass('active');
         $(this).addClass('active');
+        if($(this).hasClass('active') && $(this).hasClass('blog-all')){
+            $('.blog-items').addClass('hide');
+            $('.blog-items-all').removeClass('hide');
+            $('.blog-items-all').addClass('show-flex');
+        }
+        if($(this).hasClass('active') && $(this).hasClass('blog-video')){
+            $('.blog-items').addClass('hide');
+            $('.blog-items-video').removeClass('hide');
+            $('.blog-items-video').addClass('show-flex');
+        }
+        if($(this).hasClass('active') && $(this).hasClass('blog-site')){
+            $('.blog-items').addClass('hide');
+            $('.blog-items-site').removeClass('hide');
+            $('.blog-items-site').addClass('show-flex');
+        }
+        if($(this).hasClass('active') && $(this).hasClass('blog-marketing')){
+            $('.blog-items').addClass('hide');
+            $('.blog-items-marketing').removeClass('hide');
+            $('.blog-items-marketing').addClass('show-flex');
+        }
     });
 
     //Cut string

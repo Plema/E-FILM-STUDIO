@@ -43,10 +43,10 @@
                 <p>Фильтр</p>
               </div>
               <ul>
-                <li class="active"><a href="javascript:void(0)">Все</a></li>
-                <li><a href="javascript:void(0)">Видеопродакшн</a></li>
-                <li><a href="javascript:void(0)">Разработка сайтов</a></li>
-                <li><a href="javascript:void(0)">Интернет маркетинг</a></li>
+                <li class="active reviews-all"><a href="javascript:void(0)">Все</a></li>
+                <li class="reviews-video"><a href="javascript:void(0)">Видеопродакшн</a></li>
+                <li class="reviews-site"><a href="javascript:void(0)">Разработка сайтов</a></li>
+                <li class="reviews-marketing"><a href="javascript:void(0)">Интернет маркетинг</a></li>
               </ul>
             </div>
           </div>
@@ -54,203 +54,692 @@
           <a class="leave-reviews-btn" href="javascript:void(0)">Оставить отзыв</a>
         </div>
         <div class="reviews-content">
-          <div class="reviews-slider">
+          <div class="reviews-items reviews-all-items show">
+            <div class="reviews-slider-all">
 
-            <div class="reviews-item">
-              <div class="reviews-item-info">
-                <div class="reviews-avatar">
-                  <img src="img/reviews-avatar-1.png" alt="">
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-1.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Максим Албанов</p>
+                    <p class="reviews-pos">Арт-директор</p>
+                  </div>
                 </div>
-                <div class="reviews-header">
-                  <p class="reviews-name">Максим Албанов</p>
-                  <p class="reviews-pos">Арт-директор</p>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star passive"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+                  
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="reviews-item-content">
-                <div class="reviews-rating">
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star passive"></i>
+  
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-2.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Пётр Мор</p>
+                    <p class="reviews-pos">Художник</p>
+                  </div>
                 </div>
-                <h5 class="content-title">Лучшее видео!</h5>
-                <div class="content-text-inner">
-                  <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
-                </div>
-                
-                <p class="reviews-date">20.06.2020</p>
-                <div class="reviews-source">
-                  <p>Источник:</p>
-                  <a href="javascript:void(0)">
-                    <img src="img/reviews-source.svg" alt="">
-                  </a>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+                  
+                  <div class="content-media">
+                    <div class="content-media-item video">
+                      <a class="media-item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=0&amp;rel=0&amp;controls=1&amp;showinfo=0" data-fancybox="images"><img src="img/reviews-media-1.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-2.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup.jpg" data-fancybox="images"><img src="img/reviews-media-3.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-4.png" alt=""></a>
+                    </div>
+                  </div>
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
                 </div>
               </div>
+  
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-3.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Анастасия Салохова</p>
+                    <p class="reviews-pos">Видео блогер</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+  
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-2.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Пётр Мор</p>
+                    <p class="reviews-pos">Художник</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+                  
+                  <div class="content-media">
+                    <div class="content-media-item video">
+                      <a class="media-item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=0&amp;rel=0&amp;controls=1&amp;showinfo=0" data-fancybox="images"><img src="img/reviews-media-1.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-2.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup.jpg" data-fancybox="images"><img src="img/reviews-media-3.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-4.png" alt=""></a>
+                    </div>
+                  </div>
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-3.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Анастасия Салохова</p>
+                    <p class="reviews-pos">Видео блогер</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+  
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
             </div>
-
-            <div class="reviews-item">
-              <div class="reviews-item-info">
-                <div class="reviews-avatar">
-                  <img src="img/reviews-avatar-2.png" alt="">
-                </div>
-                <div class="reviews-header">
-                  <p class="reviews-name">Пётр Мор</p>
-                  <p class="reviews-pos">Художник</p>
-                </div>
-              </div>
-              <div class="reviews-item-content">
-                <div class="reviews-rating">
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                </div>
-                <h5 class="content-title">Лучшее видео!</h5>
-                <div class="content-text-inner">
-                  <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
-                </div>
-                
-                <div class="content-media">
-                  <div class="content-media-item video">
-                    <a class="media-item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=0&amp;rel=0&amp;controls=1&amp;showinfo=0" data-fancybox="images"><img src="img/reviews-media-1.png" alt=""></a>
-                  </div>
-                  <div class="content-media-item">
-                    <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-2.png" alt=""></a>
-                  </div>
-                  <div class="content-media-item">
-                    <a class="media-item" href="img/photo-popup.jpg" data-fancybox="images"><img src="img/reviews-media-3.png" alt=""></a>
-                  </div>
-                  <div class="content-media-item">
-                    <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-4.png" alt=""></a>
-                  </div>
-                </div>
-                <p class="reviews-date">20.06.2020</p>
-                <div class="reviews-source">
-                  <p>Источник:</p>
-                  <a href="javascript:void(0)">
-                    <img src="img/reviews-source.svg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="reviews-item">
-              <div class="reviews-item-info">
-                <div class="reviews-avatar">
-                  <img src="img/reviews-avatar-3.png" alt="">
-                </div>
-                <div class="reviews-header">
-                  <p class="reviews-name">Анастасия Салохова</p>
-                  <p class="reviews-pos">Видео блогер</p>
-                </div>
-              </div>
-              <div class="reviews-item-content">
-                <div class="reviews-rating">
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                </div>
-                <h5 class="content-title">Лучшее видео!</h5>
-                <div class="content-text-inner">
-                  <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
-                </div>
-
-                <p class="reviews-date">20.06.2020</p>
-                <div class="reviews-source">
-                  <p>Источник:</p>
-                  <a href="javascript:void(0)">
-                    <img src="img/reviews-source.svg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="reviews-item">
-              <div class="reviews-item-info">
-                <div class="reviews-avatar">
-                  <img src="img/reviews-avatar-2.png" alt="">
-                </div>
-                <div class="reviews-header">
-                  <p class="reviews-name">Пётр Мор</p>
-                  <p class="reviews-pos">Художник</p>
-                </div>
-              </div>
-              <div class="reviews-item-content">
-                <div class="reviews-rating">
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                </div>
-                <h5 class="content-title">Лучшее видео!</h5>
-                <div class="content-text-inner">
-                  <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
-                </div>
-                
-                <div class="content-media">
-                  <div class="content-media-item video">
-                    <a class="media-item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=0&amp;rel=0&amp;controls=1&amp;showinfo=0" data-fancybox="images"><img src="img/reviews-media-1.png" alt=""></a>
-                  </div>
-                  <div class="content-media-item">
-                    <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-2.png" alt=""></a>
-                  </div>
-                  <div class="content-media-item">
-                    <a class="media-item" href="img/photo-popup.jpg" data-fancybox="images"><img src="img/reviews-media-3.png" alt=""></a>
-                  </div>
-                  <div class="content-media-item">
-                    <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-4.png" alt=""></a>
-                  </div>
-                </div>
-                <p class="reviews-date">20.06.2020</p>
-                <div class="reviews-source">
-                  <p>Источник:</p>
-                  <a href="javascript:void(0)">
-                    <img src="img/reviews-source.svg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="reviews-item">
-              <div class="reviews-item-info">
-                <div class="reviews-avatar">
-                  <img src="img/reviews-avatar-3.png" alt="">
-                </div>
-                <div class="reviews-header">
-                  <p class="reviews-name">Анастасия Салохова</p>
-                  <p class="reviews-pos">Видео блогер</p>
-                </div>
-              </div>
-              <div class="reviews-item-content">
-                <div class="reviews-rating">
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                  <i class="icon-star"></i>
-                </div>
-                <h5 class="content-title">Лучшее видео!</h5>
-                <div class="content-text-inner">
-                  <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
-                </div>
-
-                <p class="reviews-date">20.06.2020</p>
-                <div class="reviews-source">
-                  <p>Источник:</p>
-                  <a href="javascript:void(0)">
-                    <img src="img/reviews-source.svg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-
+            <div class="reviews_all_count"></div>
           </div>
-          <div class="reviews_count"></div>
+
+          <div class="reviews-items reviews-video-items hide">
+            <div class="reviews-slider-video">
+  
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-2.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Пётр Мор</p>
+                    <p class="reviews-pos">Художник</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+                  
+                  <div class="content-media">
+                    <div class="content-media-item video">
+                      <a class="media-item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=0&amp;rel=0&amp;controls=1&amp;showinfo=0" data-fancybox="images"><img src="img/reviews-media-1.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-2.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup.jpg" data-fancybox="images"><img src="img/reviews-media-3.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-4.png" alt=""></a>
+                    </div>
+                  </div>
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-3.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Анастасия Салохова</p>
+                    <p class="reviews-pos">Видео блогер</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+  
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-2.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Пётр Мор</p>
+                    <p class="reviews-pos">Художник</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+                  
+                  <div class="content-media">
+                    <div class="content-media-item video">
+                      <a class="media-item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=0&amp;rel=0&amp;controls=1&amp;showinfo=0" data-fancybox="images"><img src="img/reviews-media-1.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-2.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup.jpg" data-fancybox="images"><img src="img/reviews-media-3.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-4.png" alt=""></a>
+                    </div>
+                  </div>
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-3.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Анастасия Салохова</p>
+                    <p class="reviews-pos">Видео блогер</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+  
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews_video_count"></div>
+          </div>
+
+          <div class="reviews-items reviews-site-items hide">
+            <div class="reviews-slider-site">
+  
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-3.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Анастасия Салохова</p>
+                    <p class="reviews-pos">Видео блогер</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+  
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-2.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Пётр Мор</p>
+                    <p class="reviews-pos">Художник</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+                  
+                  <div class="content-media">
+                    <div class="content-media-item video">
+                      <a class="media-item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=0&amp;rel=0&amp;controls=1&amp;showinfo=0" data-fancybox="images"><img src="img/reviews-media-1.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-2.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup.jpg" data-fancybox="images"><img src="img/reviews-media-3.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-4.png" alt=""></a>
+                    </div>
+                  </div>
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-3.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Анастасия Салохова</p>
+                    <p class="reviews-pos">Видео блогер</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+  
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+            <div class="reviews_site_count"></div>
+          </div>
+
+          <div class="reviews-items reviews-marketing-items hide">
+            <div class="reviews-slider-marketing">
+
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-1.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Максим Албанов</p>
+                    <p class="reviews-pos">Арт-директор</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star passive"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+                  
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-2.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Пётр Мор</p>
+                    <p class="reviews-pos">Художник</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+                  
+                  <div class="content-media">
+                    <div class="content-media-item video">
+                      <a class="media-item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=0&amp;rel=0&amp;controls=1&amp;showinfo=0" data-fancybox="images"><img src="img/reviews-media-1.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-2.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup.jpg" data-fancybox="images"><img src="img/reviews-media-3.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-4.png" alt=""></a>
+                    </div>
+                  </div>
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-3.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Анастасия Салохова</p>
+                    <p class="reviews-pos">Видео блогер</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+  
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-2.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Пётр Мор</p>
+                    <p class="reviews-pos">Художник</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+                  
+                  <div class="content-media">
+                    <div class="content-media-item video">
+                      <a class="media-item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=0&amp;rel=0&amp;controls=1&amp;showinfo=0" data-fancybox="images"><img src="img/reviews-media-1.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-2.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup.jpg" data-fancybox="images"><img src="img/reviews-media-3.png" alt=""></a>
+                    </div>
+                    <div class="content-media-item">
+                      <a class="media-item" href="img/photo-popup-2.jpg" data-fancybox="images"><img src="img/reviews-media-4.png" alt=""></a>
+                    </div>
+                  </div>
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="reviews-item">
+                <div class="reviews-item-info">
+                  <div class="reviews-avatar">
+                    <img src="img/reviews-avatar-3.png" alt="">
+                  </div>
+                  <div class="reviews-header">
+                    <p class="reviews-name">Анастасия Салохова</p>
+                    <p class="reviews-pos">Видео блогер</p>
+                  </div>
+                </div>
+                <div class="reviews-item-content">
+                  <div class="reviews-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <h5 class="content-title">Лучшее видео!</h5>
+                  <div class="content-text-inner">
+                    <p class="content-text">С другой стороны начало повседневной работы по формированию позиции требуют от нас анализа форм развития. Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки соответствующий условий активизации... <a class="read-more" href="javascript:void(0)">Читать дальше</a></p>
+                  </div>
+  
+                  <p class="reviews-date">20.06.2020</p>
+                  <div class="reviews-source">
+                    <p>Источник:</p>
+                    <a href="javascript:void(0)">
+                      <img src="img/reviews-source.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+            <div class="reviews_marketing_count"></div>
+          </div>
+          
         </div>
         <a class="show-more" href="javascript:void(0)">Показать больше отзывов</a>
       </div>

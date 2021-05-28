@@ -10,13 +10,13 @@ $(function(){
     // Header
 
     $(window).scroll(function(){
-        var sticky = $('.header'),
-            scroll = $(window).scrollTop();
-      
-        if (scroll >= 400) sticky.addClass('fixed');
-        else sticky.removeClass('fixed');
+            if($(window).width() >= 1280){
+                var sticky = $('.header'),
+                scroll = $(window).scrollTop();
+        
+            if (scroll > 400) sticky.addClass('fixed');
+            else sticky.removeClass('fixed');
 
-        if($(window).width() >= 1280){
             if($('.header').hasClass('fixed')){
                 $('.header-top').css('display', 'none');
             } else{
