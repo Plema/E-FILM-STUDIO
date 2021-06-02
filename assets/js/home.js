@@ -6,6 +6,30 @@ $(function(){
         });    
     }
 
+    if($('.banner').hasClass('banner-with-video')){
+        if($(window).width() >= 320){
+            $('.banner').css({'padding-bottom': '140px'});
+        } 
+        if($(window).width() >= 768){
+            $('.banner').css({'padding-bottom': '180px'});
+        } 
+        if($(window).width() >= 1024){
+            $('.banner').css({'padding-bottom': '214px'});
+        } 
+        if($(window).width() >= 1280){
+            $('.banner').css({'padding-bottom': '310px'});
+        } 
+        if($(window).width() >= 1440){
+            $('.banner').css({'padding-bottom': '340px'});
+        } 
+        if($(window).width() >= 1680){
+            $('.banner').css({'padding-bottom': '380px'});
+        } 
+        if($(window).width() >= 1920){
+            $('.banner').css({'padding-bottom': '420px'});
+        }
+    }
+
 
     $('.add-file').on('change', function(){
         if(this.value){
