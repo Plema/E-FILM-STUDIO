@@ -103,7 +103,7 @@
             .footer-nav-inner{
                 &-item{
                     a{
-                        font-family: 'ProximaNova-Semibold';
+                        font-family: 'ProximaNova-Bold';
                         font-size: 18px;
                         color: rgba(255,255,255,0.7);
                         line-height: 45px;
@@ -552,5 +552,8 @@
                 }
             }
         }
+    }
+    @media(min-width: 3000px){
+        padding-top: 300px;
     }
 }

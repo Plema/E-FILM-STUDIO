@@ -172,6 +172,8 @@
                 height: 462px;
             }
             .intro-inner{
+                bottom: -40px;
+
                 .intro-text{
                     width: 746px;
                 }
@@ -642,6 +644,9 @@
                     }
                 }
             }
+        }
+        @media(min-width: 1280px){
+            padding-top: 70px;
         }
         @media(min-width: 1440px){
             .content-inner{
@@ -1302,68 +1307,86 @@
             }
         }
         .our-services-content{
-            margin-right: -20px;
-            .filter {
-                width: 100%;
-                margin-bottom: 29px;
-
-                &:hover {
-                    ul {
-                        display: flex;
+            .filter{
+                width: 282px;
+                position: relative;
+                margin: 0 auto 19px;
+                &:hover{
+                    .filter-title{
+                        &::before{
+                            transform: translate(0, -50%) rotate(180deg);
+                        }
+                    }
+                    ul{
+                        display: block;
                     }
                 }
-                .filter-title {
-                    display: none;
+                .filter-title{
+                    width: 282px;
+                    height: 59px;
+                    cursor: pointer;
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    padding: 10px 50px 10px 65px;
+                    background: url('../img/filter.svg') 50% 50% no-repeat;
+                    background-size: cover;
+                    &::before{
+                        content: '';
+                        top: 50%;
+                        right: 30px;
+                        width: 12px;
+                        height: 8px;
+                        position: absolute;
+                        background: url('../img/arrow-drop.svg') no-repeat 50% 50%;
+                        background-size: cover;
+                        transform: translate(0, -50%);
+                        transition: all 0.4s;
+                    }
+                    &::after{
+                        content: '';
+                        top: 50%;
+                        left: 29px;
+                        width: 26px;
+                        height: 17px;
+                        position: absolute;
+                        background: url('../img/filter-img.svg') 50% 50% no-repeat;
+                        background-size: cover;
+                        transform: translate(0, -50%);
+                    }
+                    p{
+                        font-size: 16px;
+                        color: #525D7D;
+                        font-weight: 800;
+                        line-height: 19px;
+                        font-family: 'ProximaNova-Extrabld';
+                    }
                 }
                 ul{
-                    padding: 0;
-                    width: 100%;
-                    border: none;
-                    display: flex;
-                    position: static;
-                    box-shadow: none;
-                    align-items: center;
-                    justify-content: flex-start;
-                    background: transparent;
-                    overflow-x: scroll;
+                    top: 50px;
+                    left: 5px;
+                    z-index: 10;
+                    width: 275px;
+                    padding: 15px;
+                    display: none;
+                    position: absolute;
+                    border-radius: 20px;
+                    background: #FFFFFF;
+                    box-shadow: 0 4px 15px rgba(82, 93, 125, 0.2);
                     li{
-                        margin: 0 20px;
-                        &:first-child{
-                            margin-left: 0;
-                        }
+                        margin-bottom: 5px;
                         &:last-child{
-                            margin-right: 0;
+                            margin-bottom: 0;
                         }
                         a{
-                            width: 167px;
-                            height: 45px;
-                            display: flex;
                             font-size: 16px;
-                            font-weight: 600;
-                            color: #525D7D;
-                            line-height: 24px;
-                            position: relative;
-                            align-items: center;
-                            justify-content: center;
-                            font-family: 'ProximaNova-Regular';
-                            &::after{
-                                content: '';
-                                top: 0;
-                                left: 0;
-                                opacity: 0;
-                                width: 100%;
-                                height: 100%;
-                                position: absolute;
-                                background: url('../img/filter-bg.svg') no-repeat 50% 50%;
-                                background-size: cover;
-                                transition: all 0.3s;
-                            }
-                        }
-                    }
-                    li.active{
-                        a{
-                            &::after{
-                                opacity: 1;
+                            color: #868EA4;
+                            line-height: 22px;
+                            font-weight: normal;
+                            display: inline-block;
+                            transition: all 0.3s;
+                            &:hover{
+                                color: #525D7D;
                             }
                         }
                     }
@@ -1371,6 +1394,7 @@
             }
             .our-services-items{
                 flex-direction: column;
+                margin-right: -20px;
                 margin-bottom: 28px;
                 .our-services-item{
                     overflow: hidden;

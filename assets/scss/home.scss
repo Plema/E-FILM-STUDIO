@@ -1407,8 +1407,30 @@
                         font-size: 16px;
                         color: #FFFFFF;
                         line-height: 24px;
+
+                        margin-right: 10px;
                     }
+                    
                 }
+                .delete{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    // justify-content: flex-end;
+                    flex-wrap: wrap;
+                    
+                    font-family: 'ProximaNova-Regular';
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #FF8080;
+                    text-decoration: underline;
+
+                    position: relative;
+                    z-index: 3;
+
+                    cursor: pointer;
+
+                }
+                
                 .jcf-extension-jpg{
                     .jcf-fake-input{
                         &::after{

@@ -29,4 +29,5 @@ $(function(){
         }
     });
     $("#my-accordion").accordionjs();
+    jcf.replaceAll();
 });

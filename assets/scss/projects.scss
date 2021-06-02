@@ -510,8 +510,12 @@
         }
         @media(min-width: 1280px){
             .projects-inner{
-                display: flex;
-                flex-direction: column-reverse;
+                // display: flex;
+                // flex-direction: column-reverse;
+
+                .projects-content{
+                    margin-top: 100px;
+                }
 
                 .slider{
                     .projects-left{

@@ -1,10 +1,12 @@
 $(function(){
     $("#my-accordion").accordionjs();
     $("#accordion-vacancies").accordionjs({
-        activeIndex: false,
+        // activeIndex: false,
     });
     if($(window).width() < 1024){
-        $("#accordion-desc").accordionjs();
+        $("#accordion-desc").accordionjs({
+            activeIndex: false,
+        });
         $("#accordion-desc1").accordionjs();
     }
     

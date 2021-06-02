@@ -6,6 +6,24 @@ $(function(){
         });    
     }
 
+
+    $('.add-file').on('change', function(){
+        if(this.value){
+            $('.file').append('<div class="delete">Удалить бриф</div>');
+
+            if($('.file').has('.delete')){
+                $('.delete').on('click', function() {     
+                    $(".add-file").val('')
+                    jcf.getInstance($(".add-file")).refresh()
+                    $('.delete').remove();
+                 });
+            }
+
+        } else{
+            $('.delete').remove();
+        }
+    });
+        
     
     $('.our-services .filter li').on('click', function(){
         $('.our-services .filter li').removeClass('active');

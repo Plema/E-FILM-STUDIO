@@ -1,4 +1,5 @@
 $(function(){
+
     $('.services .filter li').on('click', function(){
         $('.services .filter li').removeClass('active');
         $(this).addClass('active');
