@@ -19,6 +19,9 @@ $(function(){
             $('.marketing-items').addClass('show-flex');
         }
     });
+    // $('.services .filter-title').on('click', function(){
+    //     $('.services ul').toggle();
+    // });
 
     $('.portfolio .filter li').on('click', function(){
         $('.portfolio .filter li').removeClass('active');
