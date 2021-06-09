@@ -28,6 +28,18 @@ $(function(){
             $('.portfolio-marketing-items').addClass('show');
         }
     });
+
+    $('.portfolio .filter-title').on('click', function(){
+        $('.portfolio .filter-list').toggle();
+        $('.portfolio .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+    });
+    if($(window).width() < 1024){
+        $('.portfolio .filter-list li').on('click', function(){
+            $('.portfolio .filter-list').toggle();
+            $('.portfolio .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+        });
+    }
+    
     $("#my-accordion").accordionjs();
     jcf.replaceAll();
 });

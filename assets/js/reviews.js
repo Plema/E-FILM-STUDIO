@@ -37,6 +37,17 @@ $(function(){
         }
     });
 
+    $('.reviews .filter-title').on('click', function(){
+        $('.reviews .filter-list').toggle();
+        $('.reviews .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+    });
+    if($(window).width() < 1024){
+        $('.reviews .filter-list li').on('click', function(){
+            $('.reviews .filter-list').toggle();
+            $('.reviews .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+        });
+    }
+
     //Reviews all slider
     let reviewsAllSlider = $('.reviews-slider-all');
     reviewsAllSlider.on("init", function(event, slick){

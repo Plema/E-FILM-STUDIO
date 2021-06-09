@@ -962,16 +962,7 @@
                 width: 282px;
                 position: relative;
                 margin: 0 auto 19px;
-                &:hover{
-                    .filter-title{
-                        &::before{
-                            transform: translate(0, -50%) rotate(180deg);
-                        }
-                    }
-                    ul{
-                        display: block;
-                    }
-                }
+                
                 .filter-title{
                     width: 282px;
                     height: 59px;
@@ -982,8 +973,8 @@
                     padding: 10px 50px 10px 65px;
                     background: url('../img/filter.svg') 50% 50% no-repeat;
                     background-size: cover;
-                    &::before{
-                        content: '';
+                    
+                    .filter-arrow{
                         top: 50%;
                         right: 30px;
                         width: 12px;
@@ -994,6 +985,10 @@
                         transform: translate(0, -50%);
                         transition: all 0.4s;
                     }
+                    .filter-arrow-down{
+                        transform: translate(0, -50%) rotate(180deg);
+                    }
+                    
                     &::after{
                         content: '';
                         top: 50%;

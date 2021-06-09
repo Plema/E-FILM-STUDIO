@@ -26,6 +26,17 @@ $(function(){
         }
     });
 
+    $('.blog .filter-title').on('click', function(){
+        $('.blog .filter-list').toggle();
+        $('.blog .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+    });
+    if($(window).width() < 1024){
+        $('.blog .filter-list li').on('click', function(){
+            $('.blog .filter-list').toggle();
+            $('.blog .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+        });
+    }
+
     //Cut string
     $(".blog-item-text").text(function(i, text) {
         if($(window).width() < 768){

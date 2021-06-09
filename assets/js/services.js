@@ -19,9 +19,17 @@ $(function(){
             $('.marketing-items').addClass('show-flex');
         }
     });
-    // $('.services .filter-title').on('click', function(){
-    //     $('.services ul').toggle();
-    // });
+    $('.services .filter-title').on('click', function(){
+        $('.services .filter-list').toggle();
+        $('.services .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+    });
+    if($(window).width() < 1024){
+        $('.services .filter-list li').on('click', function(){
+            $('.services .filter-list').toggle();
+            $('.services .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+        });
+    }
+    
 
     $('.portfolio .filter li').on('click', function(){
         $('.portfolio .filter li').removeClass('active');
@@ -51,6 +59,18 @@ $(function(){
             $('.marketing-portfolio-items').find('.portfolio-marketing-slider').get(0).slick.setPosition();
         }
     });
+
+    $('.portfolio .filter-title').on('click', function(){
+        $('.portfolio .filter-list').toggle();
+        $('.portfolio .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+    });
+    if($(window).width() < 1024){
+        $('.portfolio .filter-list li').on('click', function(){
+            $('.portfolio .filter-list').toggle();
+            $('.portfolio .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+        });
+    }
+    
 
     jcf.replaceAll();
 

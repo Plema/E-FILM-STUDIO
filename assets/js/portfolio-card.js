@@ -20,6 +20,17 @@ $(function(){
         }
     });
 
+    $('.services .filter-title').on('click', function(){
+        $('.services .filter-list').toggle();
+        $('.services .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+    });
+    if($(window).width() < 1024){
+        $('.services .filter-list li').on('click', function(){
+            $('.services .filter-list').toggle();
+            $('.services .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+        });
+    }
+
     //Task slider
     var taskSlider = $('.task-slider');
 

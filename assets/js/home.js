@@ -68,6 +68,16 @@ $(function(){
             $('.marketing-items').addClass('show-flex');
         }
     });
+    $('.our-services .filter-title').on('click', function(){
+        $('.our-services .filter-list').toggle();
+        $('.our-services .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+    });
+    if($(window).width() < 1024){
+        $('.our-services .filter-list li').on('click', function(){
+            $('.our-services .filter-list').toggle();
+            $('.our-services .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+        });
+    }
 
     $('.portfolio .filter li').on('click', function(){
         $('.portfolio .filter li').removeClass('active');
@@ -97,6 +107,17 @@ $(function(){
             $('.marketing-portfolio-items').find('.portfolio-marketing-slider').get(0).slick.setPosition();
         }
     });
+
+    $('.portfolio .filter-title').on('click', function(){
+        $('.portfolio .filter-list').toggle();
+        $('.portfolio .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+    });
+    if($(window).width() < 1024){
+        $('.portfolio .filter-list li').on('click', function(){
+            $('.portfolio .filter-list').toggle();
+            $('.portfolio .filter-title .filter-arrow').toggleClass('filter-arrow-down');
+        });
+    }
 
     jcf.replaceAll();
 
