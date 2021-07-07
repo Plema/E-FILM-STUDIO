@@ -269,4 +269,24 @@ $(function(){
         $('body').css('overflow', 'auto');
     });
 
+    var myMail = $('*[placeholder="E-mail"]');
+    myMail.blur(function(){
+        console.log($(this).val())
+        ValidMail($(this).val());
+    })
+    function ValidMail(value) {
+        var re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+        console.log(value)
+        var valid = re.test(value);
+        if (valid) output = 'Адрес эл. почты введен правильно!';
+        else output = 'Адрес электронной почты введен неправильно!';
+        // document.getElementById('message').innerHTML = output;
+        console.log(output)
+        return valid;
+    }
+
+    $('*[placeholder="Телефон*"]').mask('+7(000)000-00-00')
+
+
+
 });
