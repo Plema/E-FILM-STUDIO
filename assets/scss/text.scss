@@ -69,612 +69,110 @@
             padding-top: 253px;
         }
     }
+    .title{
+        text-align: center;
+        margin-bottom: 29px;
+        h1{
+            color: #525D7D;
+            font-size: 30px;
+            font-weight: 800;
+            line-height: 39px;
+            margin-bottom: 20px;
+            font-family: 'ProximaNova-Extrabld';
+        }
+        p{
+            font-size: 16px;
+            color: #525D7D;
+            line-height: 24px;
+        }
+    }
     .text{
-        
+        p{
+            font-size: 18px;
+            color: #868EA4;
+            line-height: 27px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+        ul{
+            margin-bottom: 20px;
+            li{
+                font-size: 18px;
+                color: #868EA4;
+                line-height: 27px;
+                font-weight: normal;
+                list-style-type: disc;
+                list-style-position: inside;
+            }
+        }
+        ol{
+            li{
+                font-size: 18px;
+                color: #868EA4;
+                line-height: 27px;
+                font-weight: normal;
+                list-style-type: decimal;
+                list-style-position: inside;
+            }
+        }
     }
-
-    .vacancies{
-        padding: 40px 0 0;
-        &-accordion{
-            .title{
-                text-align: center;
+    @media(min-width: 768px){
+        .title {
+            width: 540px;
+            margin: 0 auto 27px;
+            h1 {
+                font-size: 34px;
+                line-height: 42px;
+                margin-bottom: 20px;
+            }
+        } 
+    }
+    @media(min-width: 1024px){
+        .title {
+            width: 620px;
+            h1 {
+                font-size: 48px;
+                line-height: 62px;
+                margin-bottom: 40px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+    }
+    @media(min-width: 1280px){
+        .title {
+            margin: 0 auto 50px;
+            h1 {
+                font-size: 42px;
+                line-height: 50px;
                 margin-bottom: 30px;
-
-                h1{
-                    font-family: 'ProximaNova-Extrabld';
-                    font-size: 30px;
-                    line-height: 39px;
-                    color: #525D7D;
-
-                    margin-bottom: 20px;
-                }
-                p{
-                    font-family: 'ProximaNova-Regular';
-                    font-size: 18px;
-                    line-height: 27px;
-                    color: #525D7D;
-                }
             }
-            .accordion-vacancies{
-                .acc_section{
-                    margin-bottom: 20px;
-
-                    .vacancies-header{
-                        border: 1px #A8AEBE solid;
-                        border-radius: 10px;
-
-                        transition: all 0.3s;
-
-                        .vacancies-title{
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            background: #525D7D;
-                            border-radius: 10px;
-
-                            padding: 15px 20px;
-
-                            &:after{
-                                content: url('../img/mob-arrow-drop-vac.svg');
-
-                                transform: rotate(0deg);
-
-                                transition: all 0.3s;
-                            }
-
-                            h4{
-                                width: 90%;
-                                font-family: 'ProximaNova-Semibold';
-                                font-size: 16px;
-                                line-height: 24px;
-                                color: #fff;
-                            }
-                            &-info{
-                                display: none;
-                            }
-                        }
-                        .vacancies-subtitle{
-                            padding: 15px 10px 0;
-                            p{
-                                font-family: 'ProximaNova-Semibold';
-                                font-size: 16px;
-                                line-height: 24px;
-                                color: #525D7D;
-                            }
-
-                            .vacancies-map{
-                                display: flex;
-                                align-items: center;
-
-                                margin-bottom: 20px;
-
-                                &:before{
-                                    content: url('../img/map-icon.svg');
-                                    margin-right: 10px;
-                                }
-                            }
-                            .vacancies-level{
-                                display: flex;
-                                padding-bottom: 15px;
-
-                                transition: all 0.1s;
-
-                                &:before{
-                                    content: url('../img/settings-icon.svg');
-                                    margin-right: 10px;
-                                }
-                            }
-                        }
-                    }
-                    .vacancies-content{
-                        border-left: 1px #A8AEBE solid;
-                        border-right: 1px #A8AEBE solid;
-                        border-bottom: 1px #A8AEBE solid;
-
-                        border-radius: 0 0 10px 10px;
-
-                        .accordion-desc{
-                            .header-desc{
-                                padding: 10px 20px;
-                                .desc-title{
-                                    display: flex;
-                                    align-items: center;
-
-                                    h4{
-                                        font-family: 'ProximaNova-Semibold';
-                                        font-size: 16px;
-                                        line-height: 24px;
-                                        color: #525D7D;
-
-                                        margin-right: 10px;
-                                    }
-                                    svg{
-                                        transform: rotate(0deg);
-                                        transition: all 0.3s;
-                                    }
-                                }
-                            }
-                            .content-desc{
-                                .main-list{
-                                    padding: 0 10px 0 30px;
-                                    .list-item{
-                                        font-family: 'ProximaNova-Regular';
-                                        font-size: 16px;
-                                        line-height: 24px;
-                                        color: #525D7D;
-
-                                        margin-bottom: 38px;
-
-                                        list-style-image: url(../img/mob-dot-icon.svg);
-
-                                        &:last-child{
-                                            margin-bottom: 0;
-                                        }
-
-                                        p{
-                                            margin-left: 3px;
-                                        }
-                                    }
-                                }
-                            }
-                            .acc_section.acc_active{
-                                .header-desc{
-                                    .desc-title{
-                                        svg{
-                                            transform: rotate(180deg);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .acc_section.acc_active{
-                    .vacancies-header{
-                        border-bottom: 0;
-                        border-radius: 10px 10px 0 0;
-                        .vacancies-title{
-                            &:after{
-                                transform: rotate(180deg);
-                            }
-                        }
-                        .vacancies-subtitle{
-                            .vacancies-level{
-                                border-bottom: 1px rgba(168, 174, 190, 0.5) solid;
-                            }
-                        }
-                    }
-                }
-                .vacancies-btn{
-                    width: 240px;
-                    height: 60px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    font-family: 'ProximaNova-Bold';
-                    font-size: 16px;
-                    line-height: 20px;
-                    color: #525D7D;
-
-                    background: url('../img/vacancies-btn.svg') no-repeat center;
-                    background-size: cover;
-
-                    margin: 30px auto;
-                }
+            p{
+                font-size: 20px;
+                line-height: 24px;
             }
         }
-        @media(min-width: 1024px){
-            padding: 56px 0 0;
-
-            &-accordion{
-                .title{
-                    margin-bottom: 40px;
-                    h1{
-                        font-size: 48px;
-                        line-height: 62px;
-                    }
-                }
-                .accordion-vacancies{
-                    .acc_section{
-                        .vacancies-header{
-                            border: none;
-                            .vacancies-title{
-                                justify-content: flex-start;
-                                flex-wrap: wrap;
-                                position: relative;
-                                padding: 30px;
-                                border-radius: 30px;
-
-                                &:after{
-                                    content: url('../img/arrow-drop-vac.svg');
-
-                                    position: absolute;
-                                    right: 30px;
-                                    top: 50%;
-
-                                    transform: rotate(0) translate(0, -50%);
-                                }
-                                h4{
-                                    width: auto;
-                                    font-family: 'ProximaNova-Extrabld';
-                                    font-size: 24px;
-                                    line-height: 28px;
-
-                                    margin-right: 50px;
-                                }
-                                .big{
-                                    margin-bottom: 20px;
-                                }
-                                &-info{
-                                    display: flex;
-
-                                    p{
-                                        font-family: 'ProximaNova-Semibold';
-                                        font-size: 20px;
-                                        line-height: 30px;
-                                        color: #fff;
-                                    }
-
-                                    .vacancies-map-desktop{
-                                        display: flex;
-                                        align-items: center;
-        
-                                        margin-right: 70px;
-        
-                                        &:before{
-                                            content: url('../img/map-icon.svg');
-                                            margin-right: 10px;
-                                        }
-                                    }
-                                    .vacancies-level-desktop{
-                                        display: flex;
-                                        align-items: flex-start;
-                                        transition: all 0.1s;
-        
-                                        &:before{
-                                            content: url('../img/settings-icon.svg');
-                                            margin-right: 10px;
-                                        }
-                                    }
-                                }
-                            }
-                            .vacancies-subtitle{
-                                display: none;
-                            }
-                        }
-                        .vacancies-content{
-                            border: none;
-
-                            .accordion-desc{
-                                display: flex;
-                                justify-content: space-between;
-
-                                padding: 0 30px;
-                                li{
-                                    width: 49%;
-                                    .header-desc{
-                                        padding: 20px 0;
-                                        .desc-title{
-                                            h4{
-                                                font-size: 20px;
-                                                line-height: 30px;
-
-                                                &:after{
-                                                    content: "\003A";
-                                                }
-                                            }
-                                            svg{
-                                                display: none;
-                                            }
-                                        }
-                                    }
-                                    .content-desc{
-                                        .main-list{
-                                            padding-left: 20px;
-
-                                            .list-item{
-                                                width: 100%;
-                                                font-size: 18px;
-                                                line-height: 27px;
-                                                list-style-image: url(../img/blog-dot.svg);
-
-                                                p{
-                                                    margin-left: 10px;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            .vacancies-btn{
-                                margin: 40px 0 30px 30px;
-                            }
-                        }
-                    }
-                    .acc_section.acc_active{
-                        .vacancies-header{
-                            border-bottom: 0;
-                            border-radius: 10px 10px 0 0;
-                            .vacancies-title{
-                                &:after{
-                                    transform: rotate(-180deg) translate(0, 50%);
-                                }
-                            }
-                        }
-                    }
-                }
+    }
+    @media(min-width: 1400px){
+        .title {
+            h1 {
+                font-size: 52px;
+                line-height: 60px;
+                margin-bottom: 35px;
             }
         }
-        @media (min-width: 1280px){
-            &-accordion{
-                .accordion-vacancies{
-                    .acc_section{
-                        .vacancies-header{
-                            .vacancies-title{
-                                .big{
-                                    margin-bottom: 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        @media (min-width: 1440px){
-            padding-top: 64px;
-
-            &-accordion{
-                .title{
-                    h1{
-                        font-size: 54px;
-                        line-height: 70px;
-                    }
-                }
-            }
-        }
-        @media (min-width: 1440px){
-            &-accordion{
-                .title{
-                    h1{
-                        font-size: 72px;
-                        line-height: 94px;
-
-                        margin-bottom: 40px;
-                    }
-                }
-                .accordion-vacancies{
-                    .acc_section{
-                        .vacancies-header{
-                            .vacancies-title{
-                                padding: 40px;
-
-                                .vac-title{
-                                    font-size: 36px;
-                                    line-height: 43px;
-
-                                    margin-right: 70px;
-                                }
-                            }
-                        }
-                        .vacancies-content{
-                            .accordion-desc{
-                                li{
-                                    .header-desc{
-                                        padding-top: 40px;
-                                    }
-                                }
-                            }
-                            .vacancies-btn{
-                                margin-bottom: 40px;
-                            }
-                        }
-                    }
-                }
+    }
+    @media(min-width: 1680px){
+        .title {
+            margin: 0 auto 70px;
+            h1 {
+                font-size: 72px;
+                line-height: 94px;
+                margin-bottom: 60px;
             }
         }
     }
 
-    .faq{
-        z-index: 1;
-        position: relative;
-        padding: 60px 0 50px;
-        margin-bottom: 85px;
-
-        .top-link{
-            left: 50%;
-            width: 50px;
-            bottom: -50px;
-            position: absolute;
-            z-index: 10;
-            transform: translate(-50%, 0);
-            transition: all 0.5s;
-            &:hover{
-                transform: translate(-50%, 0) scale(1.2);
-            }
-        }
-
-        .title{
-            text-align: center;
-            margin-bottom: 5px;
-            h2{
-                color: #525D7D;
-                font-size: 30px;
-                font-weight: 800;
-                line-height: 39px;
-                font-family: 'ProximaNova-Extrabld';
-            }
-        }
-        .accordionjs{
-            .acc_section {
-                padding: 25px 0;
-                border-bottom: 2px solid #E0DFE6;
-                &:last-child{
-                    border-bottom: none;
-                }
-                .acc_head{
-                    cursor: pointer;
-                    font-size: 20px;
-                    color: #525D7D;
-                    font-weight: 800;
-                    line-height: 26px;
-                    position: relative;
-                    padding-right: 40px;
-                    font-family: 'ProximaNova-Extrabld';
-                    svg{
-                        top: 0;
-                        right: 0;
-                        top: 6px;
-                        right: 1px;
-                        width: 10px;
-                        position: absolute;
-                        transform: translate(0, 0) rotate(-90deg);
-                        transition: all 0.4s;
-                    }
-                }
-                .acc_content{
-                    padding: 25px 0 0;
-                    p{
-                        font-size: 18px;
-                        color: #868EA4;
-                        line-height: 27px;
-                        font-weight: normal;
-                    }
-                }
-            }
-            .acc_section.acc_active {
-                .acc_head{
-                    background: -webkit-linear-gradient(270deg ,#ffcc80 .14%,#ff8080 100.13%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    svg{
-                        transform: translate(0, 0) rotate(90deg);
-                        path{
-                            stroke: #ff8080;
-                        }
-                    }
-                }
-            }
-        }
-        .faq-img{
-            height: 170px;
-            margin: 0 -20px;
-            overflow: hidden;
-            img{
-                width: 100%;
-            }
-        }
-        @media (min-width: 768px) {  
-            padding: 25px 0 50px;
-            .title {
-                margin: 0 0 10px;
-                h2 {
-                    padding: 0;
-                    font-size: 34px;
-                    line-height: 42px;
-                }
-            }
-            .faq-img {
-                height: 500px;
-                margin: 0 -30px;
-            }
-        }
-        @media (min-width: 1024px) {
-            padding: 55px 0 50px;
-            .title {
-                margin: 0;
-                text-align: left;
-                h2 {
-                    font-size: 36px;
-                    line-height: 48px;
-                }
-            }
-            .faq-content{
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: space-between;
-            }
-            .faq-accordion{
-                width: 60%;
-            }
-            .accordionjs {
-                .acc_section {
-                    padding: 29px 0 29px;
-                    &:last-child{
-                        border-bottom: 2px solid #E0DFE6;
-                    }
-                    .acc_head {
-                        font-size: 24px;
-                        line-height: 32px;
-                        svg {
-                            width: 14px;
-                        }
-                    }
-                    .acc_content {
-                        padding: 20px 12px 0 0;
-                    }
-                }
-            }
-            .faq-img{
-                width: 36.8%;
-                height: auto;
-                overflow: hidden;
-                margin: 0 0 0 -40px;
-                img {
-                    width: auto;
-                    height: 100%;
-                    transform: translate(2%,0);
-                }
-            }
-        }
-        @media (min-width: 1280px) {
-            padding: 89px 0 70px;
-            .title {
-                h2 {
-                    font-size: 42px;
-                    line-height: 50px;
-                }
-            }
-            .faq-img {
-                img {
-                    transform: translate(0,0);
-                }
-            }
-        }
-        @media (min-width: 1400px) {
-            padding: 60px 0 90px;
-            .title {
-                h2 {
-                    font-size: 52px;
-                }
-            }
-            .faq-img {
-                margin: 0;
-            }
-        }
-        @media (min-width: 1680px) {
-            padding: 150px 0 140px;
-
-            .top-link{
-                bottom: -30px;
-            }
-            .title {
-                margin: 0 0 10px;
-                h2 {
-                    font-size: 64px;
-                    line-height: 70px;
-                }
-            }
-            .faq-accordion {
-                width: 59.3%;
-                .acc_content {
-                    padding: 20px 110px 0 0;
-                }
-            }
-            .faq-img {
-                width: 34.2%;
-                margin: 11px 0 0;
-            }
-        }
-    }
 }
