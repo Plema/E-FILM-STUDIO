@@ -39,6 +39,14 @@ $(function(){
             $('.portfolio .filter-title .filter-arrow').toggleClass('filter-arrow-down');
         });
     }
+
+    $(".portfolio-item .text p").each(function(i){
+        len=$(this).text().length;
+        if(len>116)
+        {
+          $(this).text($(this).text().substr(0,116)+'...');
+        }
+      }); 
     
     $("#my-accordion").accordionjs();
     jcf.replaceAll();

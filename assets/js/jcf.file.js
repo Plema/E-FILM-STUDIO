@@ -18,7 +18,7 @@ jcf.addModule(function($) {
 		options: {
 			fakeStructure: '<span class="jcf-file"><span class="jcf-fake-input"></span><span class="jcf-upload-button"><span class="jcf-button-content"></span></span></span>',
 			buttonText: 'Choose file',
-			placeholderText: 'No file chosen',
+			placeholderText: '',
 			realElementClass: 'jcf-real-element',
 			extensionPrefixClass: 'jcf-extension-',
 			selectedFileBlock: '.jcf-fake-input',

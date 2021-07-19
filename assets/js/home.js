@@ -243,4 +243,31 @@ $(function(){
         $('.wrapper').append('<div class="blackout-fancy"></div>');
     });
 
+    $(".portfolio-item .text p").each(function(i){
+        len=$(this).text().length;
+        if(len>116)
+        {
+          $(this).text($(this).text().substr(0,116)+'...');
+        }
+      }); 
+
+
+    $('.input-wrapper input').focus(function(){
+        $(this).parent().addClass('value')
+    })
+
+    $('.input-wrapper input').blur(function(){
+        if($(this).val().length === 0 ){
+            $(this).parent().removeClass('value')
+        }
+    })
+
+    
+
+    
+    if($('.input-wrapper input').val().length > 0 ){
+        console.log(111)
+        $(this).parent().addClass('value')
+    }
+
 });

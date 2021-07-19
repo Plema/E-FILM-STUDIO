@@ -55,6 +55,14 @@ $(function(){
         prevArrow: '<button class="slick-arrow prev"><img src="img/arrow-slider.svg"></button>',
     });
 
+    $(".example-item .text p").each(function(i){
+        len=$(this).text().length;
+        if(len>116)
+        {
+          $(this).text($(this).text().substr(0,116)+'...');
+        }
+    }); 
+
     //Customer slider
     var customersSlider = $('.customers-slider');
 

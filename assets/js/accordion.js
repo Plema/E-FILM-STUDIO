@@ -108,7 +108,7 @@
 			closeAble   : false,
 
 			// Close other sections.
-			closeOther  : true,
+			closeOther  : false,
 
 			// Animation Speed.
 			slideSpeed  : 150,

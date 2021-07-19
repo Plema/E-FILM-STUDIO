@@ -79,7 +79,7 @@
         .title{
             text-align: center;
             margin-bottom: 29px;
-            h2{
+            h1{
                 color: #525D7D;
                 font-size: 30px;
                 font-weight: 800;
@@ -247,7 +247,7 @@
             .title {
                 width: 540px;
                 margin: 0 auto 27px;
-                h2 {
+                h1 {
                     font-size: 34px;
                     line-height: 42px;
                     margin-bottom: 20px;
@@ -278,7 +278,7 @@
             padding: 56px 0 50px;
             .title {
                 width: 620px;
-                h2 {
+                h1 {
                     font-size: 48px;
                     line-height: 62px;
                     margin-bottom: 40px;
@@ -438,7 +438,7 @@
             }
             .title {
                 margin: 0 auto 50px;
-                h2 {
+                h1 {
                     font-size: 42px;
                     line-height: 50px;
                     margin-bottom: 30px;
@@ -448,7 +448,7 @@
         @media (min-width: 1400px) {
             padding: 115px 0 80px;
             .title {
-                h2 {
+                h1 {
                     font-size: 52px;
                     line-height: 60px;
                     margin-bottom: 35px;
@@ -483,7 +483,7 @@
             }
             .title {
                 margin: 0 auto 70px;
-                h2 {
+                h1 {
                     font-size: 72px;
                     line-height: 94px;
                     margin-bottom: 60px;
@@ -734,6 +734,7 @@
                                     margin-bottom: 5px;
                                     justify-content: center;
                                     align-items: flex-start;
+                                    height: 76px;
                                     li{
                                         margin: 0 6px 10px;
                                         a{
@@ -967,6 +968,7 @@
                                     width: 43%;
                                     ul {
                                         margin: 0 -8px 11px;
+                                        height: 88px;
                                         li {
                                             margin: 0 8px 10px;
                                             a {

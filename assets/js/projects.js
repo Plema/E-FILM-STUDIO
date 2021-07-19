@@ -25,6 +25,14 @@ $(function(){
         });
     }
 
+    $(".projects-item .text p").each(function(i){
+        len=$(this).text().length;
+        if(len>116)
+        {
+          $(this).text($(this).text().substr(0,116)+'...');
+        }
+      }); 
+
     //Cut string
     $(".slider-item-text").text(function(i, text) {
         if($(window).width() >= 320){
