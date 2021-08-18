@@ -285,8 +285,16 @@ $(function(){
         return valid;
     }
 
-    $('*[placeholder="Телефон*"]').mask('+7(000)000-00-00')
-
+    $('*[placeholder="Телефон*"]').mask('+7(000)000-00-00');
+    
+    $('.input-wrapper input').blur(function(){
+        if($(this).val().length === 0 ){
+            $(this).parent().removeClass('value')
+        }
+    })
+    if($('.input-wrapper input').val().length > 0 ){
+        $(this).parent().addClass('value')
+    }
 
 
 });

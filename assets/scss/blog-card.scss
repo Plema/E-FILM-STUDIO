@@ -63,10 +63,10 @@
             }
         }
         @media(min-width: 1280px){
-            padding-top: 227px;
+            padding-top: 30px;
         }
         @media(min-width: 1680px){
-            padding-top: 253px;
+            padding-top: 53px;
             display: none;
         }
     }
@@ -284,7 +284,7 @@
         }
         @media(min-width: 1600px){
             position: relative;
-            padding-top: 193px;
+            // padding-top: 193px;
             margin-top: 0;
 
             .container{
@@ -1626,8 +1626,23 @@
                         background: url('../img/mob-input-bg-grey.svg') no-repeat 100% 0%;
                         background-size: cover;
                     }
-                    input::placeholder{
+                    label{
                         color: #A8AEBE;
+                        position: absolute;
+                        top: 20px;
+                        left: 25px;
+                        transition: all 0.2s ease-out;
+                    }
+                    .input-wrapper{
+                        position: relative;
+                        
+                    }
+                    .value{
+                        label{
+                            top: -7px;
+                            background-color: #fff;
+                            
+                        }
                     }
                 }
                 textarea{
@@ -1744,11 +1759,15 @@
                         margin: 0 -2% 28px;
                         align-items: center;
                         justify-content: center;
-                        input{
+                        .input-wrapper{
                             width: 46%;
+                            margin: 0 2% 0;
+                        }
+                        input{
+                            // width: 46%;
                             height: 58px;
                             font-size: 18px;
-                            margin: 0 2% 0;
+                            // margin: 0 2% 0;
                             padding: 10px 30px;
                             background: url('../img/input-bg-grey.svg') no-repeat 50% 50%;
                             background-size: cover;

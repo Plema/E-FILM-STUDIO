@@ -65,11 +65,11 @@
             }
         }
         @media(min-width: 1280px){
-            padding-top: 227px;
+            padding-top: 30px;
         }
         @media(min-width: 1680px){
-            display: none;
-            padding-top: 253px;
+            // display: none;
+            padding-top: 53px;
         }
     }
 
@@ -190,7 +190,7 @@
             }
         }
         @media(min-width: 1600px){
-            margin-top: 193px;
+            // margin-top: 193px;
             .intro-bg{
                 height: 742px;
             }
@@ -1963,6 +1963,7 @@
                 margin: 0 auto;
                 .inputs{
                     input{
+                        position: relative;
                         width: 100%;
                         height: 58px;
                         border: none;
@@ -1976,8 +1977,23 @@
                         background: url('../img/mob-input-bg-grey.svg') no-repeat 100% 0%;
                         background-size: cover;
                     }
-                    input::placeholder{
+                    label{
+                        position: absolute;
+                        top: 20px;
+                        left: 25px;
+                        transition: all 0.2s ease-out;
                         color: #A8AEBE;
+                    }
+                    .input-wrapper{
+                        position: relative;
+                        
+                    }
+                    .value{
+                        label{
+                            top: -7px;
+                            background-color: #fff;
+                            
+                        }
                     }
                 }
                 textarea{
@@ -2094,8 +2110,12 @@
                         margin: 0 -2% 28px;
                         align-items: center;
                         justify-content: center;
-                        input{
+                        .input-wrapper{
                             width: 46%;
+                            margin: 0 2% 0;
+                        }
+                        input{
+                            // width: 46%;
                             height: 58px;
                             font-size: 18px;
                             margin: 0 2% 0;

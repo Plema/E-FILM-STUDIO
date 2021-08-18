@@ -50,8 +50,18 @@
         }
         .form-content{
             width: 280px;
-
+            .value{
+                label{
+                    top: -7px;
+                    background-color: #525D7D;
+                    
+                }
+            }
+            .input-wrapper{
+                position: relative;
+            }
             input{
+                position: relative;
                 width: 280px;
                 height: 58px;
                 border: none;
@@ -65,8 +75,12 @@
                 background: url('../img/mob-input-bg-white.svg') no-repeat 100% 0%;
                 background-size: cover;
             }
-            input::placeholder{
+            label{
                 color: rgba(255, 255, 255, 0.5);
+                position: absolute;
+                top: 20px;
+                left: 25px;
+                transition: all 0.2s ease-out;
             }
 
             .button{

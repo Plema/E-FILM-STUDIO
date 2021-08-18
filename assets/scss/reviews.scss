@@ -64,10 +64,10 @@
             }
         }
         @media(min-width: 1280px){
-            padding-top: 227px;
+            padding-top: 30px;
         }
         @media(min-width: 1680px){
-            padding-top: 253px;
+            padding-top: 53px;
         }
     }
 
@@ -947,7 +947,6 @@
         z-index: 1;
         position: relative;
         padding: 81px 0 140px;
-
         &::before{
             content: '';
             top: 0;
@@ -1016,7 +1015,19 @@
                 width: 280px;
                 margin: 0 auto;
                 .inputs{
+                    .input-wrapper{
+                        position: relative;
+                        
+                    }
+                    .value{
+                        label{
+                            top: -7px;
+                            background-color: #525D7D;
+                            
+                        }
+                    }
                     input{
+                        position: relative;
                         width: 100%;
                         height: 58px;
                         border: none;
@@ -1030,8 +1041,12 @@
                         background: url('../img/mob-input-bg-white.svg') no-repeat 100% 0%;
                         background-size: cover;
                     }
-                    input::placeholder{
+                    label{
                         color: rgba(255, 255, 255, 0.5);
+                        position: absolute;
+                        top: 20px;
+                        left: 25px;
+                        transition: all 0.2s ease-out;
                     }
                 }
                 textarea{
@@ -1073,8 +1088,30 @@
                             font-size: 16px;
                             color: #FFFFFF;
                             line-height: 24px;
+    
+                            margin-right: 10px;
                         }
+                        
                     }
+                    .delete{
+                        display: flex;
+                        flex-direction: column-reverse;
+                        // justify-content: flex-end;
+                        flex-wrap: wrap;
+                        
+                        font-family: 'ProximaNova-Regular';
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #FF8080;
+                        text-decoration: underline;
+    
+                        position: relative;
+                        z-index: 3;
+    
+                        cursor: pointer;
+    
+                    }
+                    
                     .jcf-extension-jpg{
                         .jcf-fake-input{
                             &::after{
@@ -1171,11 +1208,13 @@
                         margin: 0 -1% 28px;
                         align-items: center;
                         justify-content: center;
+                        .input-wrapper{
+                            width: 31.33%;
+                            margin: 0 1% 0;
+                        }
                         input{
                             height: 58px;
-                            width: 31.33%;
                             font-size: 18px;
-                            margin: 0 1% 0;
                             padding: 10px 30px;
                             background: url('../img/input-bg-white.svg') no-repeat 50% 50%;
                             background-size: cover;
@@ -1251,7 +1290,7 @@
                         margin: 0 -1.5% 28px;
                         input{
                             height: 58px;
-                            width: 30.33%;
+                            // width: 30.33%;
                             margin: 0 1.5%;
                             font-size: 20px;
                         }

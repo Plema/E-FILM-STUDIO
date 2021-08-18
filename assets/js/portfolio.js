@@ -50,4 +50,13 @@ $(function(){
     
     $("#my-accordion").accordionjs();
     jcf.replaceAll();
+
+    $('.input-wrapper input').blur(function(){
+        if($(this).val().length === 0 ){
+            $(this).parent().removeClass('value')
+        }
+    })
+    if($('.input-wrapper input').val().length > 0 ){
+        $(this).parent().addClass('value')
+    }
 });

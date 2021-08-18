@@ -282,14 +282,23 @@
           <form>
             <div class="form-content">
               <div class="inputs">
-                <input type="text" placeholder="Имя*">
-                <input type="text" placeholder="Телефон*">
-                <input type="text" placeholder="E-mail">
+                <div class="input-wrapper">
+                  <input type="text" placeholder="">
+                  <label>Имя*</label>
+                </div>
+                <div class="input-wrapper">
+                  <input name="PHONE" type="text" placeholder="">
+                  <label>Телефон*</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="text" placeholder="">
+                  <label>E-mail</label>
+                </div>
               </div>
               <textarea placeholder="Расскажите немного о вашем проекте"></textarea>
               <div class="file">
                 <p>Прикрепить заполненный бриф</p>  
-                <input type="file">
+                <input class="add-file" type="file">
               </div>
               <div class="button">
                 <button>Отправить</button>
@@ -417,8 +426,14 @@
             <form>
               <div class="form-content">
                 <div class="inputs">
-                  <input type="text" placeholder="Имя*">
-                  <input type="text" placeholder="E-mail">
+                  <div class="input-wrapper">
+                    <input type="text" placeholder="">
+                    <label>Имя*</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input type="text" placeholder="">
+                    <label>E-mail</label>
+                  </div>
                 </div>
                 <textarea placeholder="Расскажите немного о вашем проекте"></textarea>
                 <div class="button">
@@ -449,6 +464,7 @@
   <script src="js/jcf.min.js"></script>
   <script src="js/jcf.file.min.js"></script>
   <script src="js/accordion.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/jquery.matchHeight.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/script.min.js"></script>

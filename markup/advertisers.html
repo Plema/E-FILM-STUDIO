@@ -210,17 +210,25 @@
     <section class="leave-request">
       <div class="container">
         <div class="title">
-          <h1>Рекламодателям</h1>
-          <p>Если вы хотите подать заявку на размещение рекламы в наших проектах, то можете обсудить условия сотрудничества с нашими специалистами. Для этого <a target="_blank" href="javascript:void(0)">скачайте и заполните бриф</a> и отправьте его нам.</p>
+          <h2>Оставте заявку на свой проект</h2>
+          <p>Прежде чем отправлять заявку, скачайте и заполните <a target="_blank" href="javascript:void(0)">наш подготовленный бриф</a>, чтобы мы могли ознакомиться с вашей компанией и идеей</p>
         </div>
         <div class="leave-request-content">
-          <img class="request-left" src="img/question-left.svg" alt="bg">
           <form>
             <div class="form-content">
               <div class="inputs">
-                <input type="text" placeholder="Имя*">
-                <input type="text" placeholder="Телефон*">
-                <input type="text" placeholder="E-mail">
+                <div class="input-wrapper">
+                  <input type="text" placeholder="">
+                  <label>Имя*</label>
+                </div>
+                <div class="input-wrapper">
+                  <input name="PHONE" type="text" placeholder="">
+                  <label>Телефон*</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="text" placeholder="">
+                  <label>E-mail</label>
+                </div>
               </div>
               <textarea placeholder="Расскажите немного о вашем проекте"></textarea>
               <div class="file">
@@ -233,7 +241,6 @@
               </div>
             </div>
           </form>
-          <img class="request-right" src="img/question-right.svg" alt="bg">
         </div>
       </div>
     </section>
@@ -906,7 +913,10 @@
                     <h3 class="mailing-title">Подпишись на рассылку и будь в курсе новостей</h3>
                     <form>
                         <div class="form-content">
-                            <input type="text" placeholder="E-mail">
+                            <div class="input-wrapper">
+                                <input type="text" placeholder="">
+                                <label>E-mail</label>
+                              </div>
                             <div class="button">
                                 <button>Отправить</button>
                               </div>
@@ -1026,6 +1036,7 @@
   <script src="js/jcf.file.min.js"></script>
   <script src="js/accordion.min.js"></script>
   <script src="js/jquery.matchHeight.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/script.min.js"></script>
   <script src="js/reklamodatel.min.js"></script>
