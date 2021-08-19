@@ -34,6 +34,8 @@ $(function(){
 
     $('.open-menu').on('click', function() {
         $('.header').find('nav').toggle();
+        $('.header').toggleClass('absolute');
+        
         $('.open-menu').toggleClass('animate-menu-icon');
 
 
