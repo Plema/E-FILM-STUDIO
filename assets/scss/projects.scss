@@ -1173,6 +1173,26 @@
                         color: #868EA4;
                         line-height: 27px;
                         font-weight: normal;
+                        margin-bottom: 15px;
+                    }
+                    ul{
+                        margin-top: 15px;
+                        li{
+                            list-style-image: url(../img/blog-dot.svg);
+                            font-family: 'ProximaNova-Regular';
+                            font-size: 18px;
+                            line-height: 27px;
+                            margin-bottom: 15px;
+                            color: #525d7d;
+                            margin-left: 3px;
+                            list-style-position: inside;
+                        }
+                    }
+                    ol{
+                        margin-top: 15px;
+                        li{
+                            margin-bottom: 15px;
+                        }
                     }
                 }
             }

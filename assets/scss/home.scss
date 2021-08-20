@@ -769,16 +769,16 @@
                                 overflow: hidden;
                                 position: relative;
                                 border-radius: 20px;
-                                &::after{
-                                    content: '';
-                                    left: 0;
-                                    bottom: 0;
-                                    z-index: 1;
-                                    width: 94px;
-                                    height: 5px;
-                                    position: absolute;
-                                    background: #525D7D;
-                                }
+                                // &::after{
+                                //     content: '';
+                                //     left: 0;
+                                //     bottom: 0;
+                                //     z-index: 1;
+                                //     width: 94px;
+                                //     height: 5px;
+                                //     position: absolute;
+                                //     background: #525D7D;
+                                // }
                                 .more{
                                     top: 50%;
                                     left: 50%;
@@ -2664,6 +2664,27 @@
                     color: #868EA4;
                     line-height: 27px;
                     font-weight: normal;
+                    margin-bottom: 15px;
+
+                }
+                ul{
+                    margin-top: 15px;
+                    li{
+                        list-style-image: url(../img/blog-dot.svg);
+                        font-family: 'ProximaNova-Regular';
+                        font-size: 18px;
+                        line-height: 27px;
+                        margin-bottom: 15px;
+                        color: #525d7d;
+                        margin-left: 3px;
+                        list-style-position: inside;
+                    }
+                }
+                ol{
+                    margin-top: 15px;
+                    li{
+                        margin-bottom: 15px;
+                    }
                 }
             }
         }
